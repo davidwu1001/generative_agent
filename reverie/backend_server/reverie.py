@@ -615,9 +615,11 @@ if __name__ == '__main__':
   # os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
   # os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
 
-  origin = "base_the_ville_isabella_maria_klaus"
-  target = "test_3"
+  # origin = "base_the_ville_isabella_maria_klaus"
+  # target = "test_3"
 
+  origin = input("Enter the name of the forked simulation: ").strip()
+  target = input("Enter the name of the new simulation: ").strip()
   rs = ReverieServer(origin, target)
   rs.open_server()
 
