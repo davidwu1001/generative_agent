@@ -199,7 +199,7 @@ class ReverieServer:
       None
     OUTPUT 
       None
-      * Saves the spatial memory of the test agent to the path_tester_env.json
+      * Saves the spatial memory of the baichuan_test.py agent to the path_tester_env.json
         of the temp storage. 
     """
     def print_tree(tree): 
@@ -218,13 +218,13 @@ class ReverieServer:
       
       _print_tree(tree, 0)
 
-    # <curr_vision> is the vision radius of the test agent. Recommend 8 as 
+    # <curr_vision> is the vision radius of the baichuan_test.py agent. Recommend 8 as
     # our default. 
     curr_vision = 8
-    # <s_mem> is our test spatial memory. 
+    # <s_mem> is our baichuan_test.py spatial memory.
     s_mem = dict()
 
-    # The main while loop for the test agent. 
+    # The main while loop for the baichuan_test.py agent.
     while (True): 
       try: 
         curr_dict = {}
@@ -305,9 +305,9 @@ class ReverieServer:
     # The main while loop of Reverie. 
     while (True): 
       # Done with this iteration if <int_counter> reaches 0. 
-      if int_counter == 0: 
+      if int_counter == 0:
         break
-
+      print("1")
       # <curr_env_file> file is the file that our frontend outputs. When the
       # frontend has done its job and moved the personas, then it will put a 
       # new environment file that matches our step count. That's when we run 
@@ -605,8 +605,18 @@ if __name__ == '__main__':
   #                    "July1_the_ville_isabella_maria_klaus-step-3-21")
   # rs.open_server()
 
-  origin = input("Enter the name of the forked simulation: ").strip()
-  target = input("Enter the name of the new simulation: ").strip()
+  # origin = input("Enter the name of the forked simulation: ").strip()
+  # target = input("Enter the name of the new simulation: ").strip()
+
+  """
+  February_14_1013_7am
+  base_the_ville_isabella_maria_klaus
+  """
+  # os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
+  # os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
+
+  origin = "base_the_ville_isabella_maria_klaus"
+  target = "test_3"
 
   rs = ReverieServer(origin, target)
   rs.open_server()

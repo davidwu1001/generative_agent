@@ -1,0 +1,13 @@
+{
+  "fork_sim_code": "February_14_1013_7am",
+  "start_date": "February 13, 2023",
+  "curr_time": "February 14, 2023, 07:00:10",
+  "sec_per_step": 10,
+  "maze_name": "the_ville",
+  "persona_names": [
+    "Isabella Rodriguez",
+    "Maria Lopez",
+    "Klaus Mueller"
+  ],
+  "step": 11161
+}

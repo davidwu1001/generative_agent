@@ -54,7 +54,14 @@ def run_gpt_prompt_wake_up_hour(persona, test_input=None, verbose=False):
     return prompt_input
 
   def __func_clean_up(gpt_response, prompt=""):
-    cr = int(gpt_response.strip().lower().split("am")[0])
+
+    cr = gpt_response.strip()
+
+    # Qwen
+    if cr[0].isalpha():
+      cr = cr[-4:-1]
+
+    cr = int(cr.lower().split("am")[0])
     return cr
   
   def __func_validate(gpt_response, prompt=""): 
@@ -74,9 +81,10 @@ def run_gpt_prompt_wake_up_hour(persona, test_input=None, verbose=False):
   prompt = generate_prompt(prompt_input, prompt_template)
   fail_safe = get_fail_safe()
 
+
   output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
                                    __func_validate, __func_clean_up)
-  
+
   if debug or verbose: 
     print_run_prompts(prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
@@ -218,6 +226,12 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
 
   def __func_clean_up(gpt_response, prompt=""):
     cr = gpt_response.strip()
+
+    # Qwen todo 这里后面输出了很多多余的东西 但只要第一行
+    if '[' in cr:
+      cr = cr[:cr.index("[")]
+      cr = cr.strip("\n")
+
     if cr[-1] == ".":
       cr = cr[:-1]
     return cr
@@ -898,8 +912,6 @@ def run_gpt_prompt_event_triple(action_description, persona, verbose=False):
   def get_fail_safe(persona): 
     fs = (persona.name, "is", "idle")
     return fs
-
-
   # ChatGPT Plugin ===========================================================
   # def __chat_func_clean_up(gpt_response, prompt=""): ############
   #   cr = gpt_response.strip()

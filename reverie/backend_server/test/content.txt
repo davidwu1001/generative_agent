@@ -1,0 +1,39 @@
+Describe subtasks in 5 min increments. 
+
+---
+In 5 min increments, list the subtasks Kelly does when Kelly is working on the next day's kindergarten lesson plan from 09:00am ~ 12:00pm (total duration in minutes: 180), let's think step by step.
+previous subtasks as follows:
+1) Kelly is reviewing the kindergarten curriculum standards. (duration in minutes: 15, minutes left: 165)
+2) Kelly is brainstorming ideas for the lesson. (duration in minutes: 30, minutes left: 135)
+
+we need to list one item, so the next item is creating the lesson plan, which takes approximately 30 minutes. So now there are 105 minutes left, it doesn't finish.
+Answer: Kelly is creating the lesson plan. (duration in minutes: 30, minutes left: 105)
+
+we need to list one item, so the next item is creating materials for the lesson, which takes approximately 30 minutes. So now there are 75 minutes left, it doesn't finish.
+Answer: Kelly is creating materials for the lesson. (duration in minutes: 30, minutes left: 75)
+---
+Name: Isabella Rodriguez
+Age: 34
+Innate traits: friendly, outgoing, hospitable
+Learned traits: Isabella Rodriguez is a cafe owner of Hobbs Cafe who loves to make people feel welcome. She is always looking for ways to make the cafe a place where people can come to relax and enjoy themselves.
+Currently: Isabella Rodriguez is planning on having a Valentine's Day party at Hobbs Cafe with her customers on February 14th, 2023 at 5pm. She is gathering party material, and is telling everyone to join the party at Hobbs Cafe on February 14th, 2023, from 5pm to 7pm.
+Lifestyle: Isabella Rodriguez goes to bed around 11pm, awakes up around 6am.
+Daily plan requirement: Isabella Rodriguez opens Hobbs Cafe at 8am everyday, and works at the counter until 8pm, at which point she closes the cafe.
+Current Date: Monday February 13
+
+Today is February 13, 2023. From 00:00AM ~ 06:00AM, Isabella Rodriguez is planning on sleeping, 06:00AM ~ 07:00AM, Isabella Rodriguez is planning on waking up and completing her morning routine, 07:00AM ~ 09:00AM, Isabella Rodriguez is planning on opening Hobbs Cafe.
+In 5 min increments, list the subtasks Isabella does when Isabella is waking up and completing her morning routine from 06:00AM ~ 07:00AM (total duration in minutes 60), let's think step by step.
+previous subtasks as follows:
+1) getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) brushing teeth. (duration in minutes: 5, minutes left: 50)
+3) taking a shower. (duration in minutes: 10, minutes left: 40)
+4) drying off after the shower. (duration in minutes: 5, minutes left: 35)
+5) applying moisturizer. (duration in minutes: 5, minutes left: 30)
+6) selecting an outfit. (duration in minutes: 5, minutes left: 25)
+7) applying makeup. (duration in minutes: 5, minutes left: 20)
+8) wearing jewelry (duration in minutes: 5, minutes left: 15).
+9) brushing and styling hair. (duration in minutes: 5, minutes left: 10)
+10) wearing undergarments and clothing. (duration in minutes: 5, minutes left: 5)
+11) applying deodorant. (duration in minutes: 5, minutes left: 0)
+
+we need to list one item, so the next item is

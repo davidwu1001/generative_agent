@@ -236,7 +236,7 @@ def new_retrieve(persona, focal_points, n_count=30):
     relevance_out = normalize_dict_floats(relevance_out, 0, 1)
 
     # Computing the final scores that combines the component values. 
-    # Note to self: test out different weights. [1, 1, 1] tends to work
+    # Note to self: baichuan_test.py out different weights. [1, 1, 1] tends to work
     # decently, but in the future, these weights should likely be learned, 
     # perhaps through an RL-like process.
     # gw = [1, 1, 1]
