@@ -19,11 +19,11 @@ previous subtasks as follows:
 1) Kelly is reviewing the kindergarten curriculum standards. (duration in minutes: 15, minutes left: 165)
 2) Kelly is brainstorming ideas for the lesson. (duration in minutes: 30, minutes left: 135)
 
-let's think step by step and List the next item in one sentence:
-answer: Kelly is creating the lesson plan. (duration in minutes: 30, minutes left: 105)
+let's think step by step and List the next item in a sentence containing only subject, predicate and object:
+answer: Kelly is creating the lesson plan. (duration in minutes: 10, minutes left: 125)
 
-let's think step by step and List the next item in one sentence:
-answer: Kelly is creating materials for the lesson. (duration in minutes: 30, minutes left: 75)
+let's think step by step and List the next item in a sentence containing only subject, predicate and object:
+answer: Kelly is creating materials for the lesson. (duration in minutes: 30, minutes left: 95)
 ---
 !<INPUT 0>!
 !<INPUT 1>!
@@ -31,5 +31,5 @@ In 5 min increments, list the subtasks !<INPUT 2>! does when !<INPUT 3>! is !<IN
 previous subtasks as follows:
 !<INPUT 7>!
 
-let's think step by step and List the next item in one sentence:
+let's think step by step and List the next item in a sentence containing only subject, predicate and object:
 answer:

@@ -96,18 +96,6 @@ def run_gpt_prompt_daily_plan(persona,
                               wake_up_hour, 
                               test_input=None, 
                               verbose=False):
-  """
-  Basically the long term planning that spans a day. Returns a list of actions
-  that the persona will take today. Usually comes in the following form: 
-  'wake up and complete the morning routine at 6:00 am', 
-  'eat breakfast at 7:00 am',.. 
-  Note that the actions come without a period. 
-
-  INPUT: 
-    persona: The Persona class instance 
-  OUTPUT: 
-    a list of daily actions in broad strokes.
-  """
   def create_prompt_input(persona, wake_up_hour, test_input=None):
     if test_input: return test_input
     prompt_input = []
@@ -117,7 +105,6 @@ def run_gpt_prompt_daily_plan(persona,
     prompt_input += [persona.scratch.get_str_firstname()]
     prompt_input += [f"{str(wake_up_hour)}:00 am"]
     return prompt_input
-
   def __func_clean_up(gpt_response, prompt=""):
     cr = []
     _cr = gpt_response.split(")")
@@ -127,13 +114,11 @@ def run_gpt_prompt_daily_plan(persona,
         if i[-1] == "." or i[-1] == ",": 
           cr += [i[:-1].strip()]
     return cr
-
   def __func_validate(gpt_response, prompt=""):
     try: __func_clean_up(gpt_response, prompt="")
     except: 
       return False
     return True
-
   def get_fail_safe(): 
     fs = ['wake up and complete the morning routine at 6:00 am', 
           'eat breakfast at 7:00 am', 
@@ -143,9 +128,6 @@ def run_gpt_prompt_daily_plan(persona,
           'relax and watch TV from 7:00 pm to 8:00 pm', 
           'go to bed at 11:00 pm'] 
     return fs
-
-
-  
   gpt_param = {"engine": "text-davinci-003", "max_tokens": 500, 
                "temperature": 1, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
@@ -154,7 +136,7 @@ def run_gpt_prompt_daily_plan(persona,
   prompt = generate_prompt(prompt_input, prompt_template)
   fail_safe = get_fail_safe()
 
-  output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
+  output = safe_generate_response_gpt(prompt, gpt_param, 5, fail_safe,
                                    __func_validate, __func_clean_up)
   output = ([f"wake up and complete the morning routine at {wake_up_hour}:00 am"]
               + output)
@@ -313,7 +295,7 @@ def run_gpt_prompt_task_decomp(persona,
                                duration, 
                                test_input=None, 
                                verbose=False): 
-  def create_prompt_input(persona, task, duration, test_input=None):
+  def create_prompt_input(persona, task, duration, previous_items, test_input=None):
 
     """
     Today is Saturday June 25. From 00:00 ~ 06:00am, Maeve is 
@@ -367,66 +349,31 @@ def run_gpt_prompt_task_decomp(persona,
     prompt_input += [task]
     prompt_input += [curr_time_range]
     prompt_input += [duration]
-    prompt_input += [persona.scratch.get_str_firstname()]
+
+    prompt_input += ['\n'.join(previous_items)]
     return prompt_input
 
   def __func_clean_up(gpt_response, prompt=""):
     print ("TOODOOOOOO")
     print (gpt_response)
     print ("-==- -==- -==- ")
-
-    # TODO SOMETHING HERE sometimes fails... See screenshot
-    temp = [i.strip() for i in gpt_response.split("\n")]
+    """
+    [['getting out of bed', 5], ['brushing her teeth', 5], ['taking a shower', 10], ['getting dressed', 10], ['making breakfast', 10], ['eating breakfast', 10], ['packing her lunch', 5], ['getting ready to leave', 5]]
+    """
+    previous_items = gpt_response
     _cr = []
     cr = []
-    for count, i in enumerate(temp): 
-      if count != 0: 
-        _cr += [" ".join([j.strip () for j in i.split(" ")][3:])]
-      else: 
-        _cr += [i]
-    for count, i in enumerate(_cr): 
+    for item in previous_items:
+      _cr += [" ".join([j.strip() for j in item.split(" ")][3:])]
+
+    for i in _cr:
       k = [j.strip() for j in i.split("(duration in minutes:")]
       task = k[0]
-      if task[-1] == ".": 
+      if task[-1] == ".":
         task = task[:-1]
       duration = int(k[1].split(",")[0].strip())
       cr += [[task, duration]]
-
-    total_expected_min = int(prompt.split("(total duration in minutes")[-1]
-                                   .split("):")[0].strip())
-    
-    # TODO -- now, you need to make sure that this is the same as the sum of 
-    #         the current action sequence. 
-    curr_min_slot = [["dummy", -1],] # (task_name, task_index)
-    for count, i in enumerate(cr): 
-      i_task = i[0] 
-      i_duration = i[1]
-
-      i_duration -= (i_duration % 5)
-      if i_duration > 0: 
-        for j in range(i_duration): 
-          curr_min_slot += [(i_task, count)]       
-    curr_min_slot = curr_min_slot[1:]   
-
-    if len(curr_min_slot) > total_expected_min: 
-      last_task = curr_min_slot[60]
-      for i in range(1, 6): 
-        curr_min_slot[-1 * i] = last_task
-    elif len(curr_min_slot) < total_expected_min: 
-      last_task = curr_min_slot[-1]
-      for i in range(total_expected_min - len(curr_min_slot)):
-        curr_min_slot += [last_task]
-
-    cr_ret = [["dummy", -1],]
-    for task, task_index in curr_min_slot: 
-      if task != cr_ret[-1][0]: 
-        cr_ret += [[task, 1]]
-      else: 
-        cr_ret[-1][1] += 1
-    cr = cr_ret[1:]
-
     return cr
-
   def __func_validate(gpt_response, prompt=""): 
     # TODO -- this sometimes generates error 
     try: 
@@ -439,7 +386,13 @@ def run_gpt_prompt_task_decomp(persona,
   def get_fail_safe(): 
     fs = ["asleep"]
     return fs
-
+  def clean_up(gpt_response, prompt=""):
+    _cr = gpt_response.split('\n')[0]
+    cr = _cr.strip()
+    return cr
+  def validate(gpt_response, prompt=""):
+    return True
+  """
   gpt_param = {"engine": "text-davinci-003", "max_tokens": 1000, 
              "temperature": 0, "top_p": 1, "stream": False,
              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
@@ -452,8 +405,32 @@ def run_gpt_prompt_task_decomp(persona,
   print (prompt)
   output = safe_generate_response(prompt, gpt_param, 5, get_fail_safe(),
                                    __func_validate, __func_clean_up)
+  """
+  gpt_param = {"engine": "text-davinci-003", "max_tokens": 1000,
+               "temperature": 0, "top_p": 1, "stream": False,
+               "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
+  previous_items = []
 
-  # TODO THERE WAS A BUG HERE... 
+  prompt_template = "persona/prompt_template/v2/task_decomp_v4_init.txt"
+  prompt_input = create_prompt_input(persona, task, duration, previous_items)
+  prompt = generate_prompt(prompt_input, prompt_template)
+  fail_safe = get_fail_safe()
+  output = safe_generate_response(prompt, gpt_param, 5, get_fail_safe(), validate, clean_up)
+  previous_items.append(f"{len(previous_items) + 1}) {output}")
+  minutes_left = int(output[output.index("minutes left:") + 13:output.index(')')])
+
+  while(minutes_left > 0):
+
+    prompt_template = "persona/prompt_template/v2/task_decomp_v4.txt"
+    prompt_input = create_prompt_input(persona, task, duration, previous_items)
+    prompt = generate_prompt(prompt_input, prompt_template)
+    fail_safe = get_fail_safe()
+    output = safe_generate_response(prompt, gpt_param, 5, get_fail_safe(), validate, clean_up)
+    previous_items.append(f"{len(previous_items) + 1}) {output}")
+    minutes_left = int(output[output.index("minutes left:")+13:output.index(')')])
+
+
+  # TODO THERE WAS A BUG HERE...
   # This is for preventing overflows...
   """
   File "/Users/joonsungpark/Desktop/Stanford/Projects/
@@ -464,7 +441,7 @@ def run_gpt_prompt_task_decomp(persona,
   """
 
   print ("IMPORTANT VVV DEBUG")
-
+  output = __func_clean_up(previous_items)
   # print (prompt_input)
   # print (prompt)
   print (output)
@@ -546,8 +523,6 @@ def run_gpt_prompt_action_sector(action_description,
 
     prompt_input += [accessible_sector_str]
 
-
-
     action_description_1 = action_description
     action_description_2 = action_description
     if "(" in action_description: 
@@ -559,12 +534,6 @@ def run_gpt_prompt_action_sector(action_description,
     prompt_input += [action_description_2]
     prompt_input += [persona.scratch.get_str_name()]
     return prompt_input
-
-
-    
-
-    
-
 
   def __func_clean_up(gpt_response, prompt=""):
     cleaned_response = gpt_response.split("}")[0]

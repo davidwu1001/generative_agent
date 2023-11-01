@@ -271,6 +271,26 @@ def generate_prompt(curr_input, prompt_lib_file):
     prompt = prompt.split("<commentblockmarker>###</commentblockmarker>")[1]
   return prompt.strip()
 
+def safe_generate_response_gpt(prompt,
+                           gpt_parameter,
+                           repeat=5,
+                           fail_safe_response="error",
+                           func_validate=None,
+                           func_clean_up=None,
+                           verbose=False):
+  if verbose:
+    print (prompt)
+
+  for i in range(repeat):
+    curr_gpt_response = GPT_request(prompt, gpt_parameter)
+    if func_validate(curr_gpt_response, prompt=prompt):
+      return func_clean_up(curr_gpt_response, prompt=prompt)
+    if verbose:
+      print ("---- repeat count: ", i, curr_gpt_response)
+      print (curr_gpt_response)
+      print ("~~~~")
+  return fail_safe_response
+
 
 def safe_generate_response(prompt,
                            gpt_parameter,

@@ -367,7 +367,7 @@ def run_gpt_prompt_task_decomp(persona,
     cr = []
     for count, i in enumerate(temp):
       if count != 0:
-        _cr += [" ".join([j.strip () for j in i.split(" ")][3:])]
+        _cr += [" ".join([j.strip() for j in i.split(" ")][3:])]
       else:
         _cr += [i]
     for count, i in enumerate(_cr):

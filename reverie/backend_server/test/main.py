@@ -98,7 +98,7 @@ def save_response(title="title", prompt="", GPT_response="", Qwen_response="", B
 
 # print()
 
-opt = 1001
+opt = 1010
 
 gpt, qwen, baichuan = int(opt%1000/100), int(opt%100/10), int(opt%10)
 if __name__ == "__main__":
