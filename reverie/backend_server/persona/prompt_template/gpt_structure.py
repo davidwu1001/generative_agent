@@ -29,7 +29,7 @@ def Qwen_request(prompt, Qwen_parameter={}):
     stop=[]  # You can add custom stop words here, e.g., stop=["Observation:"] for ReAct prompting.
   )
   res = response.choices[0].message.content
-  print("\nfrom Qwen\n")
+  print(f"\nfrom Qwen: \n{res}\n")
   return res
 
 
@@ -152,7 +152,7 @@ def ChatGPT_safe_generate_response(prompt,
   prompt = '"""\n' + prompt + '\n"""\n'
   prompt += f"Output the response to the prompt above in json. {special_instruction}\n"
   prompt += "Example output json:\n"
-  prompt += '{"output": "' + str(example_output) + '"}'
+  # prompt += '{"output": "' + str(example_output) + '"}'
 
   if verbose:
     print ("CHAT GPT PROMPT")
@@ -161,7 +161,8 @@ def ChatGPT_safe_generate_response(prompt,
   for i in range(repeat):
 
     try:
-      curr_gpt_response = ChatGPT_request(prompt).strip()
+      # curr_gpt_response = ChatGPT_request(prompt).strip()
+      curr_gpt_response = Qwen_request(prompt)
       end_index = curr_gpt_response.rfind('}') + 1
       curr_gpt_response = curr_gpt_response[:end_index]
       curr_gpt_response = json.loads(curr_gpt_response)["output"]
