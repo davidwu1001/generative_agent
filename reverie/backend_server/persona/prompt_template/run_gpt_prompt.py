@@ -1849,8 +1849,12 @@ def run_gpt_prompt_event_poignancy(persona, event_description, test_input=None, 
 
   # ChatGPT Plugin ===========================================================
   def __chat_func_clean_up(gpt_response, prompt=""): ############
-    gpt_response = int(gpt_response)
-    return gpt_response
+    # 从{"output": 2} 提取 2出来
+    gpt_response_number = 0
+    for char in gpt_response:
+      if char.isdigit():
+        gpt_response_number = int(char)
+    return gpt_response_number
 
   def __chat_func_validate(gpt_response, prompt=""): ############
     try: 
