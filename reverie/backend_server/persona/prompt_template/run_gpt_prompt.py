@@ -182,7 +182,7 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
         prior_schedule += f" {persona.scratch.get_str_curr_date_str()} --"
         prior_schedule += f" {hour_str[count]}] Activity:"
         prior_schedule += f" {persona.scratch.get_str_firstname()}"
-        prior_schedule += f" is {i}\n"
+        prior_schedule += f" is {i}.\n"
 
     prompt_ending = f"[(ID:{get_random_alphanumeric()})"
     prompt_ending += f" {persona.scratch.get_str_curr_date_str()}"
@@ -353,8 +353,7 @@ def run_gpt_prompt_task_decomp(persona,
 
   def __func_clean_up(gpt_response, prompt=""):
 
-    if gpt_response.count(')') > 1 or 'duration in minutes' not in gpt_response or gpt_response[1] == ')' or gpt_response[2] == ')':
-      cr = int(gpt_response)
+
 
 
     print ("TOODOOOOOO")
@@ -390,10 +389,16 @@ def run_gpt_prompt_task_decomp(persona,
     fs = ["asleep"]
     return fs
   def clean_up(gpt_response, prompt=""):
+    if gpt_response.count(')') > 1 or 'duration in minutes' not in gpt_response or 'minutes left' not in gpt_response or gpt_response[1] == ')' or gpt_response[2] == ')':
+      cr = int(gpt_response)
     _cr = gpt_response.split('\n')[0]
     cr = _cr.strip()
     return cr
   def validate(gpt_response, prompt=""):
+    try:
+      clean_up(gpt_response, prompt="")
+    except:
+      return False
     return True
   """
   gpt_param = {"engine": "text-davinci-003", "max_tokens": 1000, 
