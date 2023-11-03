@@ -6,9 +6,12 @@ Description: Wrapper functions for calling OpenAI APIs.
 """
 import json
 import random
+
+import numpy as np
 import openai
 import time 
 import os
+from text2vec import SentenceModel
 
 from utils import *
 openai.api_key = openai_api_key
@@ -152,7 +155,7 @@ def ChatGPT_safe_generate_response(prompt,
   prompt = '"""\n' + prompt + '\n"""\n'
   prompt += f"Output the response to the prompt above in json. {special_instruction}\n"
   prompt += "Example output json:\n"
-  # prompt += '{"output": "' + str(example_output) + '"}'
+  prompt += '{"output": "' + str(example_output) + '"}'
 
   if verbose:
     print ("CHAT GPT PROMPT")
@@ -295,14 +298,29 @@ def safe_generate_response(prompt,
   return fail_safe_response
 
 
-def get_embedding(text, model="text-embedding-ada-002"):
+# def get_embedding(text, model="text-embedding-ada-002"):
+#   os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
+#   os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
+#   text = text.replace("\n", " ")
+#   if not text:
+#     text = "this is blank"
+#   vector = openai.Embedding.create(
+#           input=[text], model=model)['data'][0]['embedding']
+#   return vector
+
+def get_embedding(text, model="shibing624/text2vec-base-multilingual"):
   os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
   os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
   text = text.replace("\n", " ")
   if not text:
     text = "this is blank"
-  return openai.Embedding.create(
-          input=[text], model=model)['data'][0]['embedding']
+  print("待嵌入文本："+text)
+  # todo wcc 为了跑下去 只能扩充至1536维和之前的数据维度保持一致
+  m = SentenceModel(model_name_or_path=model)
+  vector = m.encode(text)
+  expanded_vector = np.zeros(1536)
+  expanded_vector[:len(vector)] = vector
+  return list(expanded_vector)
 
 
 if __name__ == '__main__':
