@@ -136,7 +136,7 @@ def run_gpt_prompt_daily_plan(persona,
   prompt = generate_prompt(prompt_input, prompt_template)
   fail_safe = get_fail_safe()
 
-  output = safe_generate_response_gpt(prompt, gpt_param, 5, fail_safe,
+  output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
                                    __func_validate, __func_clean_up)
   output = ([f"wake up and complete the morning routine at {wake_up_hour}:00 am"]
               + output)
@@ -203,17 +203,15 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
     else:
       prompt_input += [""]
     prompt_input += [prompt_ending]
+    prompt_input += [persona.scratch.get_str_firstname()]
+    prompt_input += [curr_hour_str]
 
     return prompt_input
 
   def __func_clean_up(gpt_response, prompt=""):
     cr = gpt_response.strip()
-
-    # Qwen todo 这里后面输出了很多多余的东西 但只要第一行
-    if '[' in cr:
-      cr = cr[:cr.index("[")]
-      cr = cr.strip("\n")
-
+    if ('is' in cr and 'his' not in cr) or 'will' in cr or 'has' in cr:
+      cr = int(cr)
     if cr[-1] == ".":
       cr = cr[:-1]
     return cr
@@ -264,7 +262,7 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
   gpt_param = {"engine": "text-davinci-003", "max_tokens": 50,
                "temperature": 0.5, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": ["\n"]}
-  prompt_template = "persona/prompt_template/v2/generate_hourly_schedule_v2.txt"
+  prompt_template = "persona/prompt_template/v4/generate_hourly_schedule.txt"
   prompt_input = create_prompt_input(persona,
                                      curr_hour_str,
                                      p_f_ds_hourly_org,
@@ -274,7 +272,7 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
   prompt = generate_prompt(prompt_input, prompt_template)
   fail_safe = get_fail_safe()
 
-  output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
+  output = safe_generate_response(prompt, gpt_param, 10, fail_safe,
                                    __func_validate, __func_clean_up)
 
   if debug or verbose:
@@ -354,6 +352,11 @@ def run_gpt_prompt_task_decomp(persona,
     return prompt_input
 
   def __func_clean_up(gpt_response, prompt=""):
+
+    if gpt_response.count(')') > 1 or 'duration in minutes' not in gpt_response or gpt_response[1] == ')' or gpt_response[2] == ')':
+      cr = int(gpt_response)
+
+
     print ("TOODOOOOOO")
     print (gpt_response)
     print ("-==- -==- -==- ")
@@ -414,6 +417,7 @@ def run_gpt_prompt_task_decomp(persona,
   prompt_template = "persona/prompt_template/v4/task_decomp_v4_init.txt"
   prompt_input = create_prompt_input(persona, task, duration, previous_items)
   prompt = generate_prompt(prompt_input, prompt_template)
+  print(prompt)
   fail_safe = get_fail_safe()
   output = safe_generate_response(prompt, gpt_param, 5, get_fail_safe(), validate, clean_up)
   previous_items.append(f"{len(previous_items) + 1}) {output}")
@@ -424,6 +428,7 @@ def run_gpt_prompt_task_decomp(persona,
     prompt_template = "persona/prompt_template/v4/task_decomp_v4.txt"
     prompt_input = create_prompt_input(persona, task, duration, previous_items)
     prompt = generate_prompt(prompt_input, prompt_template)
+    print(prompt)
     fail_safe = get_fail_safe()
     output = safe_generate_response(prompt, gpt_param, 5, get_fail_safe(), validate, clean_up)
     previous_items.append(f"{len(previous_items) + 1}) {output}")
@@ -666,6 +671,10 @@ def run_gpt_prompt_action_arena(action_description,
     return prompt_input
 
   def __func_clean_up(gpt_response, prompt=""):
+    # 若有{则去掉
+    if '{' in gpt_response:
+      gpt_response = gpt_response.replace('{', '')
+
     cleaned_response = gpt_response.split("}")[0]
     return cleaned_response
 
@@ -1849,16 +1858,12 @@ def run_gpt_prompt_event_poignancy(persona, event_description, test_input=None, 
 
   # ChatGPT Plugin ===========================================================
   def __chat_func_clean_up(gpt_response, prompt=""): ############
-    # 从{"output": 2} 提取 2出来
-    gpt_response_number = 0
-    for char in gpt_response:
-      if char.isdigit():
-        gpt_response_number = int(char)
-    return gpt_response_number
+    gpt_response = int(gpt_response)
+    return gpt_response
 
   def __chat_func_validate(gpt_response, prompt=""): ############
     try: 
-      __func_clean_up(gpt_response, prompt)
+      __chat_func_clean_up(gpt_response, prompt)
       return True
     except:
       return False 
