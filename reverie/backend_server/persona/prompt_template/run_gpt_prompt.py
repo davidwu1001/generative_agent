@@ -389,6 +389,9 @@ def run_gpt_prompt_task_decomp(persona,
     fs = ["asleep"]
     return fs
   def clean_up(gpt_response, prompt=""):
+    if gpt_response[0].isdigit():
+      gpt_response = gpt_response[gpt_response.index(')')+1:]
+
     if gpt_response.count(')') > 1 or 'duration in minutes' not in gpt_response or 'minutes left' not in gpt_response or gpt_response[1] == ')' or gpt_response[2] == ')':
       cr = int(gpt_response)
     _cr = gpt_response.split('\n')[0]
