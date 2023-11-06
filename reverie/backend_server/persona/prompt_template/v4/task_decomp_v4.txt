@@ -31,5 +31,5 @@ In 5 min increments, list the subtasks !<INPUT 2>! does when !<INPUT 3>! is !<IN
 previous subtasks as follows:
 !<INPUT 7>!
 
-let's think step by step and List the next item in a sentence containing only subject, predicate and object:
+let's think step by step and List the next item in a sentence:
 answer:
