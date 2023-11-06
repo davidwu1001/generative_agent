@@ -16,6 +16,15 @@ from global_methods import *
 from persona.prompt_template.gpt_structure import *
 from persona.prompt_template.print_prompt import *
 
+# 指定使用GPT接口的Prompt任务（函数名）
+"""可选选项
+run_gpt_prompt_daily_plan
+run_gpt_prompt_generate_hourly_schedule
+"""
+specify_tasks_using_gpt = [
+  "run_gpt_prompt_daily_plan"
+]
+
 def get_random_alphanumeric(i=6, j=6): 
   """
   Returns a random alpha numeric strength that has the length of somewhere
@@ -136,8 +145,14 @@ def run_gpt_prompt_daily_plan(persona,
   prompt = generate_prompt(prompt_input, prompt_template)
   fail_safe = get_fail_safe()
 
-  output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
+
+  if "run_gpt_prompt_daily_plan" in specify_tasks_using_gpt:
+    output = safe_generate_response_gpt(prompt, gpt_param, 5, fail_safe,
                                    __func_validate, __func_clean_up)
+  else:
+    output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
+                                    __func_validate, __func_clean_up)
+
   output = ([f"wake up and complete the morning routine at {wake_up_hour}:00 am"]
               + output)
 
@@ -272,8 +287,12 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
   prompt = generate_prompt(prompt_input, prompt_template)
   fail_safe = get_fail_safe()
 
-  output = safe_generate_response(prompt, gpt_param, 10, fail_safe,
+  if "run_gpt_prompt_generate_hourly_schedule" in specify_tasks_using_gpt:
+    output = safe_generate_response_gpt(prompt, gpt_param, 10, fail_safe,
                                    __func_validate, __func_clean_up)
+  else:
+    output = safe_generate_response(prompt, gpt_param, 10, fail_safe,
+                                    __func_validate, __func_clean_up)
 
   if debug or verbose:
     print_run_prompts(prompt_template, persona, gpt_param,
