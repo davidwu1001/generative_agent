@@ -467,11 +467,11 @@ def run_gpt_prompt_task_decomp(persona,
     print(prompt)
     fail_safe = get_fail_safe()
     output = safe_generate_response(prompt, gpt_param, 5, get_fail_safe(), validate, clean_up)
-    if int(output[output.index("minutes left:") + 13:output.index(')')]) < minutes_left:
-      previous_items.append(f"{len(previous_items) + 1}) {output}")
-      minutes_left = int(output[output.index("minutes left:") + 13:output.index(')')])
-    else:
-      pass
+    # if int(output[output.index("minutes left:") + 13:output.index(')')]) < minutes_left:
+    previous_items.append(f"{len(previous_items) + 1}) {output}")
+    minutes_left = int(output[output.index("minutes left:") + 13:output.index(')')])
+    # else:
+    #   pass
 
 
   # TODO THERE WAS A BUG HERE...
