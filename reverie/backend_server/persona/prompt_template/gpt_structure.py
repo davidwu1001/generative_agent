@@ -185,6 +185,8 @@ def ChatGPT_safe_generate_response(prompt,
     except:
       pass
 
+    else:
+      pass
   return False
 
 
