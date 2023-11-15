@@ -2025,7 +2025,7 @@ def run_gpt_prompt_chat_poignancy(persona, event_description, test_input=None, v
     return prompt_input
   
   def __func_clean_up(gpt_response, prompt=""):
-    gpt_response = int(gpt_response.strip())
+    gpt_response = int(gpt_response)
     return gpt_response
 
   def __func_validate(gpt_response, prompt=""): 

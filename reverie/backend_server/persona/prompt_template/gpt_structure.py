@@ -20,7 +20,7 @@ openai.api_key = openai_api_key
 def Qwen_request(prompt, Qwen_parameter={}):
   os.environ["HTTP_PROXY"] = ""
   os.environ["HTTPS_PROXY"] = ""
-  openai.api_base = "http://10.112.189.233:8000/v1"
+  openai.api_base = "http://10.112.189.233:8001/v1"
   openai.api_key = "none"
   response = openai.ChatCompletion.create(
     model="Qwen",
@@ -158,7 +158,7 @@ def ChatGPT_safe_generate_response(prompt,
   prompt += '{"output": "' + str(example_output) + '"}'
 
   if verbose:
-    print ("CHAT GPT PROMPT")
+    print ("~~~ prompt    ----------------------------------------------------")
     print (prompt)
 
   for i in range(repeat):
@@ -197,7 +197,7 @@ def ChatGPT_safe_generate_response_OLD(prompt,
                                    func_clean_up=None,
                                    verbose=False):
   if verbose:
-    print ("CHAT GPT PROMPT")
+    print ("~~~ prompt    ----------------------------------------------------")
     print (prompt)
 
   for i in range(repeat):
