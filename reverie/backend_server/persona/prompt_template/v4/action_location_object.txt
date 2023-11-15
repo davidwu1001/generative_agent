@@ -35,4 +35,4 @@ Answer: {cafe}
 * NEVER go into other people's rooms unless necessary.
 For !<INPUT 5>!,which !<INPUT 6>! should go?(just output the area)
 Area options: {!<INPUT 2>!}
-Answer: {
+Answer: 
