@@ -29,7 +29,7 @@ def Qwen_request(prompt, Qwen_parameter={}):
        "content": prompt}
     ],
     stream=False,
-    stop=[]  # You can add custom stop words here, e.g., stop=["Observation:"] for ReAct prompting.
+    stop=[]
   )
   res = response.choices[0].message.content
   print(f"\nfrom Qwen: \n{res}\n")
@@ -185,6 +185,8 @@ def ChatGPT_safe_generate_response(prompt,
     except:
       pass
 
+    else:
+      pass
   return False
 
 
@@ -297,6 +299,26 @@ def safe_generate_response(prompt,
       print ("~~~~")
   return fail_safe_response
 
+def safe_generate_response_gpt(prompt,
+                           gpt_parameter,
+                           repeat=5,
+                           fail_safe_response="error",
+                           func_validate=None,
+                           func_clean_up=None,
+                           verbose=False):
+  if verbose:
+    print (prompt)
+
+  for i in range(repeat):
+    curr_gpt_response = GPT_request(prompt, gpt_parameter)
+    # curr_gpt_response = Qwen_request(prompt, gpt_parameter)
+    if func_validate(curr_gpt_response, prompt=prompt):
+      return func_clean_up(curr_gpt_response, prompt=prompt)
+    if verbose:
+      print ("---- repeat count: ", i, curr_gpt_response)
+      print (curr_gpt_response)
+      print ("~~~~")
+  return fail_safe_response
 
 # def get_embedding(text, model="text-embedding-ada-002"):
 #   os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
