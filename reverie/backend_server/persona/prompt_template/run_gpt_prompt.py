@@ -225,8 +225,17 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
 
   def __func_clean_up(gpt_response, prompt=""):
     cr = gpt_response.strip()
+
     if ('is' in cr and 'his' not in cr) or 'will' in cr or 'has' in cr:
-      cr = int(cr)
+      cr = cr.split("is")[1]  # 提取分割后的后半部分
+      print(cr)
+    elif 'will' in cr:
+      cr = cr.split("will")[1]  # 提取分割后的后半部分
+      print(cr)
+    elif 'has' in cr:
+      cr = cr.split("has")[1]  # 提取分割后的后半部分
+      print(cr)
+
     if cr[-1] == ".":
       cr = cr[:-1]
     return cr
@@ -458,8 +467,11 @@ def run_gpt_prompt_task_decomp(persona,
     print(prompt)
     fail_safe = get_fail_safe()
     output = safe_generate_response(prompt, gpt_param, 5, get_fail_safe(), validate, clean_up)
-    previous_items.append(f"{len(previous_items) + 1}) {output}")
-    minutes_left = int(output[output.index("minutes left:")+13:output.index(')')])
+    if int(output[output.index("minutes left:") + 13:output.index(')')]) < minutes_left:
+      previous_items.append(f"{len(previous_items) + 1}) {output}")
+      minutes_left = int(output[output.index("minutes left:") + 13:output.index(')')])
+    else:
+      pass
 
 
   # TODO THERE WAS A BUG HERE...
