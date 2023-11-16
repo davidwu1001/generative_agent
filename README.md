@@ -1,0 +1,2 @@
+console_outputs 存放某个存档的控制台输出文件，便于回溯bug
+比如`25_February_13_2023_06_21_40`的控制台输出文件为`console_outputs/25_February_13_2023_06_21_40控制台输出.txt`
