@@ -721,6 +721,9 @@ def run_gpt_prompt_action_arena(action_description,
       gpt_response = gpt_response.replace('{', '')
 
     cleaned_response = gpt_response.split("}")[0]
+
+
+    # fuck
     return cleaned_response
 
   def __func_validate(gpt_response, prompt=""):
@@ -1232,7 +1235,7 @@ def run_gpt_prompt_new_decomp_schedule(persona,
         break
       if ret_dur_sum > dur_sum: 
         over = ret_dur_sum - dur_sum
-        
+
         break
       count += 1 
 
