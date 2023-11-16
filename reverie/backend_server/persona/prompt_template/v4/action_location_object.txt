@@ -11,7 +11,7 @@ Variables:
 
 
 <commentblockmarker>###</commentblockmarker>
-Task -- choose an appropriate action area.
+Task -- choose an appropriate action area. Please view two examples and make your decision.
 
 Tom Watson is in common room in Tom Watson's apartment.
 Tom Watson is going to Hobbs Cafe that has cafe.
@@ -20,8 +20,8 @@ Tom Watson is going to Hobbs Cafe that has cafe.
 For getting coffee, which Tom Watson should go?(just output the area)
 Area options: {cafe}
 Answer: {cafe}
----
 
+Please select only one of the regions to choose from as the answer, if there is no region to choose from, please print the empty set {}.
 !<INPUT 0>! is going to !<INPUT 1>! that has {!<INPUT 2>!}.
 * Stay in the current area if the activity can be done there. 
 * NEVER go into other people's rooms unless necessary.
