@@ -473,14 +473,23 @@ def run_gpt_prompt_task_decomp(persona,
     fail_safe = get_fail_safe()
     output = safe_generate_response(prompt, gpt_param, 5, get_fail_safe(), validate, clean_up)
     # if int(output[output.index("minutes left:") + 13:output.index(')')]) < minutes_left:
-    previous_items.append(f"{len(previous_items) + 1}) {output}")
+
+    # duration_in_minutes = int(output[output.index("duration in minutes:") + 20:output.index(',')])
+    # minutes_left = int(output[output.index("minutes left:") + 13:output.index(')')])
     duration_in_minutes = int(re.search(r"duration in minutes: (\d+)", output).group(1))
     minutes_left = int(re.search(r"minutes left: (\d+)", output).group(1))
-  print()
+    # 检查上一个子任务的剩余时间和当前子任务的持续时间
+    last_minutes_left = int(re.search(r"minutes left: (\d+)", previous_items[-1]).group(1))
+    if minutes_left != (last_minutes_left - duration_in_minutes):
+      output = re.sub(r"minutes left: (\d+)", f"minutes left: {last_minutes_left - duration_in_minutes}", output)
+      minutes_left = last_minutes_left - duration_in_minutes
+    previous_items.append(f"{len(previous_items) + 1}) {output}")
+
     # if minutes_left <= 10:  # 还剩 10min的时候直接把这个子任务置零 解决Qwen不置零问题
     #   duration_in_minutes += minutes_left
-    #   re.sub(r"duration in minutes: (\d+)", f"duration in minutes: {duration_in_minutes}", output)
-    #   re.sub(r"minutes left: (\d+)", f"minutes left: {0}", output)
+    #   output[output[output.index("duration in minutes:") + 20:output.index(',')]] = duration_in_minutes
+    #   output[output[output.index("minutes left:") + 13:output.index(')')]] = 0
+    #   minutes_left = 0
 
     # else:
     #   pass
