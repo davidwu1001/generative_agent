@@ -115,7 +115,10 @@ def run_gpt_prompt_daily_plan(persona,
     prompt_input += [f"{str(wake_up_hour)}:00 am"]
     return prompt_input
   def __func_clean_up(gpt_response, prompt=""):
+    # 前面有2)就把他删了
+    gpt_response = gpt_response.replace('2)', '')
     cr = []
+
     _cr = gpt_response.split(")")
     for i in _cr:
       if i[-1].isdigit():
@@ -145,12 +148,7 @@ def run_gpt_prompt_daily_plan(persona,
   prompt = generate_prompt(prompt_input, prompt_template)
   fail_safe = get_fail_safe()
 
-
-  if "run_gpt_prompt_daily_plan" in specify_tasks_using_gpt:
-    output = safe_generate_response_gpt(prompt, gpt_param, 5, fail_safe,
-                                   __func_validate, __func_clean_up)
-  else:
-    output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
+  output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
                                     __func_validate, __func_clean_up)
 
   output = ([f"wake up and complete the morning routine at {wake_up_hour}:00 am"]
