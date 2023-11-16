@@ -1232,6 +1232,7 @@ def run_gpt_prompt_new_decomp_schedule(persona,
         break
       if ret_dur_sum > dur_sum: 
         over = ret_dur_sum - dur_sum
+        
         break
       count += 1 
 
