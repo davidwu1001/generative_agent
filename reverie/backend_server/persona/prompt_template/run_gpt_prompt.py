@@ -719,11 +719,23 @@ def run_gpt_prompt_action_arena(action_description,
     # 若有{则去掉
     if '{' in gpt_response:
       gpt_response = gpt_response.replace('{', '')
-
     cleaned_response = gpt_response.split("}")[0]
 
 
-    # fuck
+    # fin_accessible_arenas：允许选择的地点，判断cleaned_response是否在其中，如果不在则返回错误
+    x = f"{act_world}:{act_sector}"
+    accessible_arena_str = persona.s_mem.get_str_accessible_sector_arenas(x)
+    curr = accessible_arena_str.split(", ")
+    fin_accessible_arenas = []
+    for i in curr:
+      if "'s room" in i:
+        if persona.scratch.last_name in i:
+          fin_accessible_arenas += [i]
+      else:
+        fin_accessible_arenas += [i]
+    if cleaned_response not in fin_accessible_arenas:
+      return False
+
     return cleaned_response
 
   def __func_validate(gpt_response, prompt=""):
