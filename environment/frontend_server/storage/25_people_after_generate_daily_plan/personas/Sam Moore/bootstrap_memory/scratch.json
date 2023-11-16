@@ -1,0 +1,188 @@
+{
+  "vision_r": 8,
+  "att_bandwidth": 8,
+  "retention": 8,
+  "curr_time": "February 13, 2023, 00:33:20",
+  "curr_tile": [
+    36,
+    65
+  ],
+  "daily_plan_req": "Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.",
+  "name": "Sam Moore",
+  "first_name": "Sam",
+  "last_name": "Moore",
+  "age": 65,
+  "innate": "wise, resourceful, humorous",
+  "learned": "Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.",
+  "currently": "Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it",
+  "lifestyle": "Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.",
+  "living_area": "the Ville:Moore family's house:main room",
+  "concept_forget": 100,
+  "daily_reflection_time": 180,
+  "daily_reflection_size": 5,
+  "overlap_reflect_th": 4,
+  "kw_strg_event_reflect_th": 10,
+  "kw_strg_thought_reflect_th": 9,
+  "recency_w": 1,
+  "relevance_w": 1,
+  "importance_w": 1,
+  "recency_decay": 0.995,
+  "importance_trigger_max": 250,
+  "importance_trigger_curr": 227,
+  "importance_ele_n": 16,
+  "thought_count": 5,
+  "daily_req": [
+    "wake up and complete the morning routine at 5:00 am"
+  ],
+  "f_daily_schedule": [
+    [
+      "sleeping",
+      300
+    ],
+    [
+      "waking up (is opening his eyes)",
+      5
+    ],
+    [
+      "waking up (is rubbing his eyes)",
+      5
+    ],
+    [
+      "waking up (is getting out of bed)",
+      5
+    ],
+    [
+      "waking up (is stretching his body)",
+      5
+    ],
+    [
+      "waking up (is sitting up in bed)",
+      5
+    ],
+    [
+      "waking up (is reaching for his glasses on the nightstand)",
+      5
+    ],
+    [
+      "waking up (is looking at the clock to check the time)",
+      5
+    ],
+    [
+      "waking up (is standing up from his bed)",
+      5
+    ],
+    [
+      "waking up (is putting on his slippers)",
+      5
+    ],
+    [
+      "waking up (is picking up his phone to check his messages)",
+      5
+    ],
+    [
+      "waking up (is brushing his teeth)",
+      10
+    ],
+    [
+      "taking a walk around Johnson Park",
+      60
+    ],
+    [
+      "enjoying a cup of coffee at Hobbs cafe while reading the newspaper",
+      60
+    ],
+    [
+      "enjoying breakfast at home with his wife",
+      120
+    ],
+    [
+      "enjoying a cup of coffee at Hobbs cafe while reading the newspaper",
+      60
+    ],
+    [
+      "enjoying a conversation with his neighbor over lunch at Hobbs cafe",
+      60
+    ],
+    [
+      "enjoying lunch at Hobbs cafe with his neighbor",
+      420
+    ],
+    [
+      "enjoying dinner at home with his wife",
+      300
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ]
+  ],
+  "f_daily_schedule_hourly_org": [
+    [
+      "sleeping",
+      300
+    ],
+    [
+      "waking up",
+      60
+    ],
+    [
+      "taking a walk around Johnson Park",
+      60
+    ],
+    [
+      "enjoying a cup of coffee at Hobbs cafe while reading the newspaper",
+      60
+    ],
+    [
+      "enjoying breakfast at home with his wife",
+      120
+    ],
+    [
+      "enjoying a cup of coffee at Hobbs cafe while reading the newspaper",
+      60
+    ],
+    [
+      "enjoying a conversation with his neighbor over lunch at Hobbs cafe",
+      60
+    ],
+    [
+      "enjoying lunch at Hobbs cafe with his neighbor",
+      420
+    ],
+    [
+      "enjoying dinner at home with his wife",
+      300
+    ]
+  ],
+  "act_address": "the Ville:Moore family's house:main room:bed",
+  "act_start_time": "February 13, 2023, 00:00:00",
+  "act_duration": 300,
+  "act_description": "sleeping",
+  "act_pronunciatio": "\ud83d\ude42",
+  "act_event": [
+    "Sam Moore",
+    "is",
+    "sleep"
+  ],
+  "act_obj_description": "used for sleeping",
+  "act_obj_pronunciatio": "\ud83d\ude34\ud83e\uddd1",
+  "act_obj_event": [
+    "bed",
+    "be used for",
+    "sleeping"
+  ],
+  "chatting_with": null,
+  "chat": null,
+  "chatting_with_buffer": {},
+  "chatting_end_time": null,
+  "act_path_set": true,
+  "planned_path": []
+}
