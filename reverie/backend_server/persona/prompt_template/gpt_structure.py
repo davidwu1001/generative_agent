@@ -202,7 +202,7 @@ def ChatGPT_safe_generate_response_OLD(prompt,
 
   for i in range(repeat):
     try:
-      curr_gpt_response = ChatGPT_request(prompt).strip()
+      curr_gpt_response = Qwen_request(prompt).strip()
       if func_validate(curr_gpt_response, prompt=prompt):
         return func_clean_up(curr_gpt_response, prompt=prompt)
       if verbose:

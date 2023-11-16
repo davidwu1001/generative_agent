@@ -469,7 +469,13 @@ def run_gpt_prompt_task_decomp(persona,
     output = safe_generate_response(prompt, gpt_param, 5, get_fail_safe(), validate, clean_up)
     # if int(output[output.index("minutes left:") + 13:output.index(')')]) < minutes_left:
     previous_items.append(f"{len(previous_items) + 1}) {output}")
+    duration_in_minutes = int(output[output.index("duration in minutes:") + 20:output.index(',')])
     minutes_left = int(output[output.index("minutes left:") + 13:output.index(')')])
+    if minutes_left <= 10:  # 还剩 10min的时候直接把这个子任务置零 解决Qwen不置零问题
+      duration_in_minutes += minutes_left
+      output[output[output.index("duration in minutes:") + 20:output.index(',')]] = duration_in_minutes
+      output[output[output.index("minutes left:") + 13:output.index(')')]] = 0
+
     # else:
     #   pass
 
@@ -713,8 +719,23 @@ def run_gpt_prompt_action_arena(action_description,
     # 若有{则去掉
     if '{' in gpt_response:
       gpt_response = gpt_response.replace('{', '')
-
     cleaned_response = gpt_response.split("}")[0]
+
+
+    # fin_accessible_arenas：允许选择的地点，判断cleaned_response是否在其中，如果不在则返回错误
+    x = f"{act_world}:{act_sector}"
+    accessible_arena_str = persona.s_mem.get_str_accessible_sector_arenas(x)
+    curr = accessible_arena_str.split(", ")
+    fin_accessible_arenas = []
+    for i in curr:
+      if "'s room" in i:
+        if persona.scratch.last_name in i:
+          fin_accessible_arenas += [i]
+      else:
+        fin_accessible_arenas += [i]
+    if cleaned_response not in fin_accessible_arenas:
+      return False
+
     return cleaned_response
 
   def __func_validate(gpt_response, prompt=""):
@@ -1226,6 +1247,7 @@ def run_gpt_prompt_new_decomp_schedule(persona,
         break
       if ret_dur_sum > dur_sum: 
         over = ret_dur_sum - dur_sum
+
         break
       count += 1 
 
@@ -2905,7 +2927,7 @@ def run_gpt_generate_iterative_chat_utt(maze, init_persona, target_persona, retr
     return cleaned_dict
 
   def __chat_func_validate(gpt_response, prompt=""): 
-    print ("ugh...")
+    print ("验证对话中")
     try: 
       # print ("debug 1")
       # print (gpt_response)
