@@ -467,11 +467,11 @@ def run_gpt_prompt_task_decomp(persona,
     print(prompt)
     fail_safe = get_fail_safe()
     output = safe_generate_response(prompt, gpt_param, 5, get_fail_safe(), validate, clean_up)
-    if int(output[output.index("minutes left:") + 13:output.index(')')]) < minutes_left:
-      previous_items.append(f"{len(previous_items) + 1}) {output}")
-      minutes_left = int(output[output.index("minutes left:") + 13:output.index(')')])
-    else:
-      pass
+    # if int(output[output.index("minutes left:") + 13:output.index(')')]) < minutes_left:
+    previous_items.append(f"{len(previous_items) + 1}) {output}")
+    minutes_left = int(output[output.index("minutes left:") + 13:output.index(')')])
+    # else:
+    #   pass
 
 
   # TODO THERE WAS A BUG HERE...
@@ -2025,7 +2025,7 @@ def run_gpt_prompt_chat_poignancy(persona, event_description, test_input=None, v
     return prompt_input
   
   def __func_clean_up(gpt_response, prompt=""):
-    gpt_response = int(gpt_response.strip())
+    gpt_response = int(gpt_response)
     return gpt_response
 
   def __func_validate(gpt_response, prompt=""): 

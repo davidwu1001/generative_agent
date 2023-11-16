@@ -1,0 +1,204 @@
+{
+  "vision_r": 8,
+  "att_bandwidth": 8,
+  "retention": 8,
+  "curr_time": "February 13, 2023, 06:21:40",
+  "curr_tile": [
+    87,
+    65
+  ],
+  "daily_plan_req": "John Lin goes to the Willow Market and Pharmacy around 9am to open the pharmacy counter. He stands behind the counter until 5pm and returns home.",
+  "name": "John Lin",
+  "first_name": "John",
+  "last_name": "Lin",
+  "age": 45,
+  "innate": "patient, kind, organized",
+  "learned": "John Lin is a pharmacy shop keeper at the Willow Market and Pharmacy who loves to help people. He is always looking for ways to make the process of getting medication easier for his customers.",
+  "currently": "John Lin is living with his wife, Mei Lin, and son, Eddy Lin, and is shop keeping a pharmacy at the Willow Market and Pharmacy. He is also taking online classes to stay up to date on new medications and treatments. John is also curious about who will be running for the local mayor election next month and he is asking everyone he meets about who will be running in the election.",
+  "lifestyle": "John Lin goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.",
+  "living_area": "the Ville:Lin family's house:Mei and John Lin's bedroom",
+  "concept_forget": 100,
+  "daily_reflection_time": 180,
+  "daily_reflection_size": 5,
+  "overlap_reflect_th": 4,
+  "kw_strg_event_reflect_th": 10,
+  "kw_strg_thought_reflect_th": 9,
+  "recency_w": 1,
+  "relevance_w": 1,
+  "importance_w": 1,
+  "recency_decay": 0.995,
+  "importance_trigger_max": 250,
+  "importance_trigger_curr": 192,
+  "importance_ele_n": 43,
+  "thought_count": 5,
+  "daily_req": [
+    "wake up and complete the morning routine at 6:00 am"
+  ],
+  "f_daily_schedule": [
+    [
+      "sleeping",
+      360
+    ],
+    [
+      "waking up (is brushing his teeth)",
+      5
+    ],
+    [
+      "waking up (is washing his face)",
+      5
+    ],
+    [
+      "waking up (is combing his hair)",
+      5
+    ],
+    [
+      "waking up (is changing into clean clothes)",
+      5
+    ],
+    [
+      "waking up (is doing some light stretching to prepare his body for the day ahead)",
+      5
+    ],
+    [
+      "waking up (is checking the weather forecast for the day)",
+      5
+    ],
+    [
+      "waking up (is taking a shower to freshen up before starting his day)",
+      10
+    ],
+    [
+      "waking up (is getting out of bed to start his morning routine)",
+      5
+    ],
+    [
+      "waking up (is drying himself off after taking a shower)",
+      5
+    ],
+    [
+      "waking up (is putting on deodorant and moisturizer to freshen up and keep his skin hydrated)",
+      5
+    ],
+    [
+      "waking up (is selecting an outfit to wear for the day)",
+      5
+    ],
+    [
+      "having breakfast (making coffee)",
+      10
+    ],
+    [
+      "having breakfast (boiling water for tea)",
+      10
+    ],
+    [
+      "having breakfast (preparing toast)",
+      10
+    ],
+    [
+      "having breakfast (spreading butter on the toast)",
+      10
+    ],
+    [
+      "having breakfast (eating breakfast)",
+      10
+    ],
+    [
+      "having breakfast (sipping his coffee)",
+      10
+    ],
+    [
+      "leaving for the Willow Market and Pharmacy to open the pharmacy counter",
+      60
+    ],
+    [
+      "at the Willow Market and Pharmacy to open the pharmacy counter",
+      60
+    ],
+    [
+      "serving customers at the pharmacy counter",
+      660
+    ],
+    [
+      "sleeping at home",
+      180
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ]
+  ],
+  "f_daily_schedule_hourly_org": [
+    [
+      "sleeping",
+      360
+    ],
+    [
+      "waking up",
+      60
+    ],
+    [
+      "having breakfast",
+      60
+    ],
+    [
+      "leaving for the Willow Market and Pharmacy to open the pharmacy counter",
+      60
+    ],
+    [
+      "at the Willow Market and Pharmacy to open the pharmacy counter",
+      60
+    ],
+    [
+      "serving customers at the pharmacy counter",
+      660
+    ],
+    [
+      "sleeping at home",
+      180
+    ]
+  ],
+  "act_address": "the Ville:Lin family's house:common room:shelf",
+  "act_start_time": "February 13, 2023, 06:20:00",
+  "act_duration": 5,
+  "act_description": "waking up (is doing some light stretching to prepare his body for the day ahead)",
+  "act_pronunciatio": "\ud83c\udfc3\u200d\u2642",
+  "act_event": [
+    "John Lin",
+    "do",
+    "stretching"
+  ],
+  "act_obj_description": "untouched",
+  "act_obj_pronunciatio": ".EM",
+  "act_obj_event": [
+    "shelf",
+    "be",
+    "untouched"
+  ],
+  "chatting_with": null,
+  "chat": null,
+  "chatting_with_buffer": {},
+  "chatting_end_time": null,
+  "act_path_set": true,
+  "planned_path": []
+}
