@@ -13,16 +13,6 @@ Variables:
 <commentblockmarker>###</commentblockmarker>
 Task -- choose an appropriate action area. Please view two examples and make your decision.
 
-Example1:
-Jane Anderson is in kitchen in Jane Anderson's house.
-Jane Anderson is going to Jane Anderson's house that has kitchen,  bedroom, bathroom.
-* Stay in the current area if the activity can be done there.
-* NEVER go into other people's rooms unless necessary.
-For cooking, which Jane Anderson should go?(just output the area)
-Area options: {kitchen,  bedroom, bathroom}
-Answer: {kitchen}
-
-Example2:
 Tom Watson is in common room in Tom Watson's apartment.
 Tom Watson is going to Hobbs Cafe that has cafe.
 * Stay in the current area if the activity can be done there.

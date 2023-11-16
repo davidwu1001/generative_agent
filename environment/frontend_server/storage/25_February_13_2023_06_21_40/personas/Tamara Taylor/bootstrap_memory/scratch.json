@@ -1,0 +1,180 @@
+{
+  "vision_r": 8,
+  "att_bandwidth": 8,
+  "retention": 8,
+  "curr_time": "February 13, 2023, 06:21:40",
+  "curr_tile": [
+    55,
+    74
+  ],
+  "daily_plan_req": "",
+  "name": "Tamara Taylor",
+  "first_name": "Tamara",
+  "last_name": "Taylor",
+  "age": 30,
+  "innate": "imaginative, patient, kind",
+  "learned": "Tamara Taylor is a children's book author who loves to create stories that capture the imaginations of young readers. She is very patient and kind when it comes to her work.",
+  "currently": "Tamara Taylor lives with a housemate, Carmen Ortiz, and is working on a new series of children's books. She is also working on a comic book series for adults.",
+  "lifestyle": "Tamara Taylor goes to bed around 10pm, awakes up around 6am, eats dinner around 6pm.",
+  "living_area": "the Ville:Tamara Taylor and Carmen Ortiz's house:Tamara Taylor's room",
+  "concept_forget": 100,
+  "daily_reflection_time": 180,
+  "daily_reflection_size": 5,
+  "overlap_reflect_th": 4,
+  "kw_strg_event_reflect_th": 10,
+  "kw_strg_thought_reflect_th": 9,
+  "recency_w": 1,
+  "relevance_w": 1,
+  "importance_w": 1,
+  "recency_decay": 0.995,
+  "importance_trigger_max": 250,
+  "importance_trigger_curr": 224,
+  "importance_ele_n": 13,
+  "thought_count": 5,
+  "daily_req": [
+    "wake up and complete the morning routine at 6:00 am"
+  ],
+  "f_daily_schedule": [
+    [
+      "sleeping",
+      60
+    ],
+    [
+      "asleep",
+      120
+    ],
+    [
+      "sleeping",
+      180
+    ],
+    [
+      "waking up",
+      60
+    ],
+    [
+      "eating breakfast (is brewing a cup of coffee)",
+      10
+    ],
+    [
+      "eating breakfast (is making toast)",
+      10
+    ],
+    [
+      "eating breakfast (is spreading butter on the toast)",
+      5
+    ],
+    [
+      "eating breakfast (is slicing jam to spread on the toast)",
+      5
+    ],
+    [
+      "eating breakfast (is eating the toast with jam)",
+      5
+    ],
+    [
+      "eating breakfast (is drinking the coffee)",
+      5
+    ],
+    [
+      "eating breakfast (is sitting down to eat breakfast)",
+      5
+    ],
+    [
+      "eating breakfast (is enjoying her breakfast)",
+      5
+    ],
+    [
+      "eating breakfast (is eating the toast with jam)",
+      5
+    ],
+    [
+      "eating breakfast (is savoring the taste of her breakfast)",
+      5
+    ],
+    [
+      "writing",
+      240
+    ],
+    [
+      "eating lunch",
+      60
+    ],
+    [
+      "writing",
+      660
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ]
+  ],
+  "f_daily_schedule_hourly_org": [
+    [
+      "sleeping",
+      60
+    ],
+    [
+      "asleep",
+      120
+    ],
+    [
+      "sleeping",
+      180
+    ],
+    [
+      "waking up",
+      60
+    ],
+    [
+      "eating breakfast",
+      60
+    ],
+    [
+      "writing",
+      240
+    ],
+    [
+      "eating lunch",
+      60
+    ],
+    [
+      "writing",
+      660
+    ]
+  ],
+  "act_address": "the Ville:Tamara Taylor and Carmen Ortiz's house:Tamara Taylor's room:bed",
+  "act_start_time": "February 13, 2023, 06:00:00",
+  "act_duration": 60,
+  "act_description": "waking up",
+  "act_pronunciatio": "\u23f0\ud83d\ude34",
+  "act_event": [
+    "Tamara Taylor",
+    "wake up",
+    ""
+  ],
+  "act_obj_description": "occupied by Tamara Taylor",
+  "act_obj_pronunciatio": "\ud83c\udfe0\ud83d\udc69\u200d",
+  "act_obj_event": [
+    "bed",
+    "be occupied by",
+    "Tamara Taylor"
+  ],
+  "chatting_with": null,
+  "chat": null,
+  "chatting_with_buffer": {},
+  "chatting_end_time": null,
+  "act_path_set": true,
+  "planned_path": []
+}

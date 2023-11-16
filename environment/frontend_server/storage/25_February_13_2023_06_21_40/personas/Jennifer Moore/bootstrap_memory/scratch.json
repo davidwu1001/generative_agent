@@ -1,0 +1,326 @@
+{
+  "vision_r": 8,
+  "att_bandwidth": 8,
+  "retention": 8,
+  "curr_time": "February 13, 2023, 06:21:30",
+  "curr_tile": [
+    39,
+    62
+  ],
+  "daily_plan_req": "",
+  "name": "Jennifer Moore",
+  "first_name": "Jennifer",
+  "last_name": "Moore",
+  "age": 68,
+  "innate": "wise, experienced, warm",
+  "learned": "Jennifer Moore is a watercolor painter who has been painting for over fifty years. She is wise and experienced, and her work is full of warmth.",
+  "currently": "Jennifer Moore lives with her husband of 40 years, Sam Moore, and is preparing for an exhibition of her work. She is also mentoring younger artists to help them find their own creative voice.",
+  "lifestyle": "Jennifer Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.",
+  "living_area": "the Ville:Moore family's house:main room",
+  "concept_forget": 100,
+  "daily_reflection_time": 180,
+  "daily_reflection_size": 5,
+  "overlap_reflect_th": 4,
+  "kw_strg_event_reflect_th": 10,
+  "kw_strg_thought_reflect_th": 9,
+  "recency_w": 1,
+  "relevance_w": 1,
+  "importance_w": 1,
+  "recency_decay": 0.995,
+  "importance_trigger_max": 250,
+  "importance_trigger_curr": 30,
+  "importance_ele_n": 128,
+  "thought_count": 5,
+  "daily_req": [
+    "wake up and complete the morning routine at 5:00 am"
+  ],
+  "f_daily_schedule": [
+    [
+      "sleeping",
+      300
+    ],
+    [
+      "waking up (is getting out of bed)",
+      5
+    ],
+    [
+      "waking up (on the way to is stretching her body)",
+      0
+    ],
+    [
+      "waking up (conversing about the lack of conversation between Sam and Jennifer.)",
+      2
+    ],
+    [
+      "waking up (is washing her face)",
+      5
+    ],
+    [
+      "waking up (is brushing her teeth)",
+      5
+    ],
+    [
+      "waking up (is putting on her robe)",
+      5
+    ],
+    [
+      "waking up (is tying her hair back)",
+      5
+    ],
+    [
+      "waking up (is brewing a cup of tea)",
+      5
+    ],
+    [
+      "waking up (is drinking her tea)",
+      5
+    ],
+    [
+      "waking up (is doing some light exercise to get her blood flowing)",
+      5
+    ],
+    [
+      "waking up (is meditating for 5 minutes to clear her mind before starting her day)",
+      5
+    ],
+    [
+      "waking up (is picking out her clothes for the day)",
+      5
+    ],
+    [
+      "waking up (is checking the weather forecast to decide what type of clothing she should wear today)",
+      5
+    ],
+    [
+      "awaking up (turns off the alarm clock)",
+      5
+    ],
+    [
+      "awaking up (stretches her body to wake up fully)",
+      5
+    ],
+    [
+      "awaking up (washes her face to freshen up)",
+      5
+    ],
+    [
+      "awaking up (brushes her teeth to freshen her breath)",
+      5
+    ],
+    [
+      "awaking up (drinks a cup of tea to warm up and start her morning)",
+      5
+    ],
+    [
+      "awaking up (performs a few simple yoga poses to stretch and energize her muscles)",
+      5
+    ],
+    [
+      "awaking up (prays or meditates to center herself and set a positive tone for the day)",
+      5
+    ],
+    [
+      "awaking up (listens to calming music to further relax and prepare for the day ahead)",
+      5
+    ],
+    [
+      "awaking up (checks the weather forecast to decide what clothes to wear for the day)",
+      5
+    ],
+    [
+      "awaking up (sets out the clothes she plans to wear for the day on her bed or chair)",
+      5
+    ],
+    [
+      "awaking up (takes a shower to clean herself thoroughly and get ready for the day)",
+      10
+    ],
+    [
+      "awake (stretching her body)",
+      5
+    ],
+    [
+      "awake (drinking a cup of tea)",
+      5
+    ],
+    [
+      "awake (reviewing her daily plan)",
+      5
+    ],
+    [
+      "awake (meditating for 5 minutes)",
+      5
+    ],
+    [
+      "awake (practicing yoga for 5 minutes)",
+      5
+    ],
+    [
+      "awake (doing some light stretching to warm up her muscles)",
+      5
+    ],
+    [
+      "awake (reviewing her calendar for the day)",
+      5
+    ],
+    [
+      "awake (setting her intentions for the day)",
+      5
+    ],
+    [
+      "awake (doing some deep breathing exercises to help clear her mind and reduce stress)",
+      5
+    ],
+    [
+      "awake (reviewing her daily plan for the next 5 minutes)",
+      5
+    ],
+    [
+      "awake (reviewing her schedule for the day)",
+      5
+    ],
+    [
+      "awake (reviewing her daily plan for the next 5 minutes)",
+      5
+    ],
+    [
+      "preparing for the exhibition of her work",
+      60
+    ],
+    [
+      "preparing breakfast for herself and her husband Sam",
+      60
+    ],
+    [
+      "painting at her studio",
+      840
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      3
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ]
+  ],
+  "f_daily_schedule_hourly_org": [
+    [
+      "sleeping",
+      300
+    ],
+    [
+      "waking up",
+      60
+    ],
+    [
+      "awaking up",
+      60
+    ],
+    [
+      "awake",
+      60
+    ],
+    [
+      "preparing for the exhibition of her work",
+      60
+    ],
+    [
+      "preparing breakfast for herself and her husband Sam",
+      60
+    ],
+    [
+      "painting at her studio",
+      840
+    ]
+  ],
+  "act_address": "the Ville:Moore family's house:main room:kitchen sink",
+  "act_start_time": "February 13, 2023, 06:17:00",
+  "act_duration": 5,
+  "act_description": "awaking up (drinks a cup of tea to warm up and start her morning)",
+  "act_pronunciatio": "\u2615\ufe0f\ud83d\udc86",
+  "act_event": [
+    "Jennifer Moore",
+    "drink",
+    "cup of tea"
+  ],
+  "act_obj_description": "untouched",
+  "act_obj_pronunciatio": "\u2705",
+  "act_obj_event": [
+    "kitchen sink",
+    "be",
+    "untouched"
+  ],
+  "chatting_with": null,
+  "chat": null,
+  "chatting_with_buffer": {
+    "Sam Moore": 322
+  },
+  "chatting_end_time": null,
+  "act_path_set": true,
+  "planned_path": []
+}
