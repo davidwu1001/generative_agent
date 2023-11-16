@@ -457,7 +457,12 @@ def run_gpt_prompt_task_decomp(persona,
   fail_safe = get_fail_safe()
   output = safe_generate_response(prompt, gpt_param, 5, get_fail_safe(), validate, clean_up)
   previous_items.append(f"{len(previous_items) + 1}) {output}")
-  minutes_left = int(output[output.index("minutes left:") + 13:output.index(')')])
+  import re
+  try:
+    minutes_left = re.search(r"minutes left: (\d+)", output).group(1)
+    minutes_left = int(minutes_left)
+  except:
+    minutes_left = 0
 
   while(minutes_left > 0):
 
@@ -469,12 +474,13 @@ def run_gpt_prompt_task_decomp(persona,
     output = safe_generate_response(prompt, gpt_param, 5, get_fail_safe(), validate, clean_up)
     # if int(output[output.index("minutes left:") + 13:output.index(')')]) < minutes_left:
     previous_items.append(f"{len(previous_items) + 1}) {output}")
-    duration_in_minutes = int(output[output.index("duration in minutes:") + 20:output.index(',')])
-    minutes_left = int(output[output.index("minutes left:") + 13:output.index(')')])
-    if minutes_left <= 10:  # 还剩 10min的时候直接把这个子任务置零 解决Qwen不置零问题
-      duration_in_minutes += minutes_left
-      output[output[output.index("duration in minutes:") + 20:output.index(',')]] = duration_in_minutes
-      output[output[output.index("minutes left:") + 13:output.index(')')]] = 0
+    duration_in_minutes = int(re.search(r"duration in minutes: (\d+)", output).group(1))
+    minutes_left = int(re.search(r"minutes left: (\d+)", output).group(1))
+  print()
+    # if minutes_left <= 10:  # 还剩 10min的时候直接把这个子任务置零 解决Qwen不置零问题
+    #   duration_in_minutes += minutes_left
+    #   re.sub(r"duration in minutes: (\d+)", f"duration in minutes: {duration_in_minutes}", output)
+    #   re.sub(r"minutes left: (\d+)", f"minutes left: {0}", output)
 
     # else:
     #   pass
