@@ -1209,6 +1209,8 @@ def run_gpt_prompt_new_decomp_schedule(persona,
     return prompt_input
   
   def __func_clean_up(gpt_response, prompt=""):
+    #
+    gpt_response = gpt_response[gpt_response.index('~')+1:]
     new_schedule = prompt + " " + gpt_response.strip()
     new_schedule = new_schedule.split("The revised schedule:")[-1].strip()
     new_schedule = new_schedule.split("\n")

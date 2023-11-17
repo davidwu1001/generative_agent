@@ -1,0 +1,281 @@
+{
+  "vision_r": 8,
+  "att_bandwidth": 8,
+  "retention": 8,
+  "curr_time": "February 13, 2023, 05:02:30",
+  "curr_tile": [
+    36,
+    65
+  ],
+  "daily_plan_req": "Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.",
+  "name": "Sam Moore",
+  "first_name": "Sam",
+  "last_name": "Moore",
+  "age": 65,
+  "innate": "wise, resourceful, humorous",
+  "learned": "Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.",
+  "currently": "Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it",
+  "lifestyle": "Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.",
+  "living_area": "the Ville:Moore family's house:main room",
+  "concept_forget": 100,
+  "daily_reflection_time": 180,
+  "daily_reflection_size": 5,
+  "overlap_reflect_th": 4,
+  "kw_strg_event_reflect_th": 10,
+  "kw_strg_thought_reflect_th": 9,
+  "recency_w": 1,
+  "relevance_w": 1,
+  "importance_w": 1,
+  "recency_decay": 0.995,
+  "importance_trigger_max": 250,
+  "importance_trigger_curr": 184,
+  "importance_ele_n": 36,
+  "thought_count": 5,
+  "daily_req": [
+    "wake up and complete the morning routine at 5:00 am",
+    "Take a walk around Johnson Park at 6:00 am",
+    "Have breakfast at 7:00 am",
+    "Spend some time reading at Hobbs cafe from 9:00 am to 11:00 am",
+    "Return home and spend some time working on his campaign for local mayor from 11:00 am to 1:00 pm",
+    "Have lunch at 1:00 pm",
+    "Take a nap from 2:00 pm to 4:00 pm",
+    "Spend some time with his wife Jennifer from 4:00 pm to 6:00 pm"
+  ],
+  "f_daily_schedule": [
+    [
+      "sleeping",
+      300
+    ],
+    [
+      "awakening at 5:00 am (is waking up)",
+      10
+    ],
+    [
+      "awakening at 5:00 am (on the way to is stretching his body)",
+      0
+    ],
+    [
+      "awakening at 5:00 am (conversing about conversing about their sleep quality)",
+      1
+    ],
+    [
+      "awakening at 5:00 am (is brushing his teeth)",
+      10
+    ],
+    [
+      "awakening at 5:00 am (is getting dressed)",
+      10
+    ],
+    [
+      "awakening at 5:00 am (is brewing a cup of coffee)",
+      10
+    ],
+    [
+      "awakening at 5:00 am (is eating breakfast)",
+      10
+    ],
+    [
+      "taking a walk around Johnson Park (is taking a walk around Johnson Park)",
+      10
+    ],
+    [
+      "taking a walk around Johnson Park (is admiring the flowers in the park)",
+      10
+    ],
+    [
+      "taking a walk around Johnson Park (is enjoying the fresh air and sunshine while taking a walk around Johnson Park)",
+      10
+    ],
+    [
+      "taking a walk around Johnson Park (is taking a deep breath and feeling grateful for the beauty of nature around him)",
+      10
+    ],
+    [
+      "taking a walk around Johnson Park (is observing the children playing in the park)",
+      10
+    ],
+    [
+      "taking a walk around Johnson Park (is taking a stroll around the park)",
+      10
+    ],
+    [
+      "having breakfast",
+      60
+    ],
+    [
+      "taking a walk around Johnson Park",
+      60
+    ],
+    [
+      "sitting at Hobbs cafe reading",
+      120
+    ],
+    [
+      "working on his campaign for local mayor",
+      60
+    ],
+    [
+      "enjoying a leisurely lunch at home with his wife Jennifer",
+      60
+    ],
+    [
+      "having lunch",
+      60
+    ],
+    [
+      "taking a nap",
+      60
+    ],
+    [
+      "taking a nap from 2:00 pm to 4:00 pm",
+      60
+    ],
+    [
+      "spending some time with his wife Jennifer",
+      60
+    ],
+    [
+      "awake and completing his morning routine",
+      60
+    ],
+    [
+      "taking a walk around Johnson Park",
+      60
+    ],
+    [
+      "enjoying dinner with his wife at home",
+      60
+    ],
+    [
+      "reading at Hobbs cafe",
+      60
+    ],
+    [
+      "sitting at Hobbs cafe reading",
+      60
+    ],
+    [
+      " retired, he will likely go to bed at 9pm, so he will not be doing anything at 10:00 PM",
+      60
+    ],
+    [
+      "Asleep in bed, ready to get a good night's rest before the next day's activities",
+      60
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      9
+    ]
+  ],
+  "f_daily_schedule_hourly_org": [
+    [
+      "sleeping",
+      300
+    ],
+    [
+      "awakening at 5:00 am",
+      60
+    ],
+    [
+      "taking a walk around Johnson Park",
+      60
+    ],
+    [
+      "having breakfast",
+      60
+    ],
+    [
+      "taking a walk around Johnson Park",
+      60
+    ],
+    [
+      "sitting at Hobbs cafe reading",
+      120
+    ],
+    [
+      "working on his campaign for local mayor",
+      60
+    ],
+    [
+      "enjoying a leisurely lunch at home with his wife Jennifer",
+      60
+    ],
+    [
+      "having lunch",
+      60
+    ],
+    [
+      "taking a nap",
+      60
+    ],
+    [
+      "taking a nap from 2:00 pm to 4:00 pm",
+      60
+    ],
+    [
+      "spending some time with his wife Jennifer",
+      60
+    ],
+    [
+      "awake and completing his morning routine",
+      60
+    ],
+    [
+      "taking a walk around Johnson Park",
+      60
+    ],
+    [
+      "enjoying dinner with his wife at home",
+      60
+    ],
+    [
+      "reading at Hobbs cafe",
+      60
+    ],
+    [
+      "sitting at Hobbs cafe reading",
+      60
+    ],
+    [
+      " retired, he will likely go to bed at 9pm, so he will not be doing anything at 10:00 PM",
+      60
+    ],
+    [
+      "Asleep in bed, ready to get a good night's rest before the next day's activities",
+      60
+    ]
+  ],
+  "act_address": "the Ville:Moore family's house:main room:bed",
+  "act_start_time": "February 13, 2023, 05:01:00",
+  "act_duration": 10,
+  "act_description": "awakening at 5:00 am (is waking up)",
+  "act_pronunciatio": "\ud83c\udf05\ud83d\udecf\ufe0f",
+  "act_event": [
+    "Sam Moore",
+    "wake up",
+    ""
+  ],
+  "act_obj_description": "unmade",
+  "act_obj_pronunciatio": "\u7dda\u4e0a",
+  "act_obj_event": [
+    "bed",
+    "be",
+    "unmade"
+  ],
+  "chatting_with": null,
+  "chat": null,
+  "chatting_with_buffer": {
+    "Jennifer Moore": 790
+  },
+  "chatting_end_time": null,
+  "act_path_set": true,
+  "planned_path": []
+}

@@ -1,0 +1,370 @@
+{
+  "vision_r": 8,
+  "att_bandwidth": 8,
+  "retention": 8,
+  "curr_time": "February 13, 2023, 05:02:30",
+  "curr_tile": [
+    35,
+    26
+  ],
+  "daily_plan_req": "",
+  "name": "Hailey Johnson",
+  "first_name": "Hailey",
+  "last_name": "Johnson",
+  "age": 30,
+  "innate": "imaginative, energetic, resourceful",
+  "learned": "Hailey Johnson is a writer who is always looking for new ways to tell stories. She loves to immerse herself in different cultures and explore their literature.",
+  "currently": "Hailey Johnson is writing a novel about a group of artists living in a co-living space. She is also planning to start a podcast.",
+  "lifestyle": "Hailey Johnson goes to bed around 2am, awakes up around 10am, eats dinner around 6pm.",
+  "living_area": "the Ville:artist's co-living space:Hailey Johnson's room",
+  "concept_forget": 100,
+  "daily_reflection_time": 180,
+  "daily_reflection_size": 5,
+  "overlap_reflect_th": 4,
+  "kw_strg_event_reflect_th": 10,
+  "kw_strg_thought_reflect_th": 9,
+  "recency_w": 1,
+  "relevance_w": 1,
+  "importance_w": 1,
+  "recency_decay": 0.995,
+  "importance_trigger_max": 250,
+  "importance_trigger_curr": 159,
+  "importance_ele_n": 37,
+  "thought_count": 5,
+  "daily_req": [
+    "wake up and complete the morning routine at 0:00 am",
+    "Write for 4 hours from 10:00 am to 2:00 pm",
+    "Take a break and go for a walk outside from 2:00 pm to 3:00 pm",
+    "Write for another 4 hours from 3:00 pm to 7:00 pm",
+    "Take a break and have dinner at 6:00 pm",
+    "Attend a virtual writing workshop from 7:00 pm to 9:00 pm"
+  ],
+  "f_daily_schedule": [
+    [
+      "awake (is checking her email)",
+      10
+    ],
+    [
+      "awake (is responding to urgent emails)",
+      10
+    ],
+    [
+      "awake (is brainstorming ideas for her novel)",
+      10
+    ],
+    [
+      "awake (is drinking a cup of tea)",
+      10
+    ],
+    [
+      "awake (is taking a short break to stretch her legs)",
+      10
+    ],
+    [
+      "awake (is reviewing her notes on the co-living space for inspiration for her novel)",
+      10
+    ],
+    [
+      "asleep",
+      60
+    ],
+    [
+      "currently sleeping",
+      60
+    ],
+    [
+      "sleeping",
+      120
+    ],
+    [
+      "awake (is reviewing her daily plan)",
+      10
+    ],
+    [
+      "awake (is getting out of bed)",
+      10
+    ],
+    [
+      "awake (is stretching and doing some light exercise to get her body moving)",
+      10
+    ],
+    [
+      "awake (is washing her face and brushing her teeth)",
+      10
+    ],
+    [
+      "awake (is getting dressed for the day)",
+      10
+    ],
+    [
+      "awake (is making herself a cup of coffee)",
+      10
+    ],
+    [
+      "awake (is checking her emails and responding to any urgent messages)",
+      10
+    ],
+    [
+      "awake (is reviewing her calendar and to-do list for the day)",
+      10
+    ],
+    [
+      "awake (is taking a shower to freshen up for the day)",
+      10
+    ],
+    [
+      "awake (is brushing her teeth)",
+      10
+    ],
+    [
+      "awake (is getting dressed for the day)",
+      10
+    ],
+    [
+      "awake (is making herself a cup of coffee)",
+      10
+    ],
+    [
+      "awake (is reviewing her daily plan)",
+      10
+    ],
+    [
+      "awake (is reviewing her daily plan)",
+      10
+    ],
+    [
+      "awake (is getting out of bed)",
+      10
+    ],
+    [
+      "awake (is stretching and doing some light exercise to get her body moving)",
+      10
+    ],
+    [
+      "awake (is washing her face and brushing her teeth)",
+      10
+    ],
+    [
+      "awake (is getting dressed for the day)",
+      10
+    ],
+    [
+      "awake (is making herself a cup of coffee)",
+      10
+    ],
+    [
+      "awake (is reviewing her daily plan)",
+      10
+    ],
+    [
+      "awake (is checking her emails and responding to any urgent messages)",
+      10
+    ],
+    [
+      "awake (is reviewing her calendar and to-do list for the day)",
+      10
+    ],
+    [
+      "awake (is reviewing her daily plan)",
+      10
+    ],
+    [
+      "awake (is reviewing her daily plan)",
+      10
+    ],
+    [
+      "waking up",
+      60
+    ],
+    [
+      "writing for 4 hours",
+      60
+    ],
+    [
+      "writing for 4 hours from 10:00 am to 2:00 pm",
+      60
+    ],
+    [
+      "writing",
+      60
+    ],
+    [
+      "writing for 4 hours from 10:00 am to 2:00 pm",
+      60
+    ],
+    [
+      "taking a break and going for a walk outside",
+      120
+    ],
+    [
+      "currently writing for another 4 hours from 3:00 pm to 7:00 pm",
+      60
+    ],
+    [
+      "writing for another 4 hours from 3:00 pm to 7:00 pm",
+      60
+    ],
+    [
+      "enjoying a peaceful dinner",
+      60
+    ],
+    [
+      "attending a virtual writing workshop",
+      180
+    ],
+    [
+      "writing for 4 hours from 10:00 am to 2:00 pm",
+      60
+    ],
+    [
+      "writing in her notebook",
+      60
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ]
+  ],
+  "f_daily_schedule_hourly_org": [
+    [
+      "awake",
+      60
+    ],
+    [
+      "asleep",
+      60
+    ],
+    [
+      "currently sleeping",
+      60
+    ],
+    [
+      "sleeping",
+      120
+    ],
+    [
+      "awake",
+      240
+    ],
+    [
+      "waking up",
+      60
+    ],
+    [
+      "writing for 4 hours",
+      60
+    ],
+    [
+      "writing for 4 hours from 10:00 am to 2:00 pm",
+      60
+    ],
+    [
+      "writing",
+      60
+    ],
+    [
+      "writing for 4 hours from 10:00 am to 2:00 pm",
+      60
+    ],
+    [
+      "taking a break and going for a walk outside",
+      120
+    ],
+    [
+      "currently writing for another 4 hours from 3:00 pm to 7:00 pm",
+      60
+    ],
+    [
+      "writing for another 4 hours from 3:00 pm to 7:00 pm",
+      60
+    ],
+    [
+      "enjoying a peaceful dinner",
+      60
+    ],
+    [
+      "attending a virtual writing workshop",
+      180
+    ],
+    [
+      "writing for 4 hours from 10:00 am to 2:00 pm",
+      60
+    ],
+    [
+      "writing in her notebook",
+      60
+    ]
+  ],
+  "act_address": "the Ville:artist's co-living space:common room:common room sofa",
+  "act_start_time": "February 13, 2023, 05:00:00",
+  "act_duration": 10,
+  "act_description": "awake (is reviewing her daily plan)",
+  "act_pronunciatio": "\ud83d\udcdd\ud83d\udcad",
+  "act_event": [
+    "Hailey Johnson",
+    "review",
+    "daily plan"
+  ],
+  "act_obj_description": "occupied by Hailey Johnson",
+  "act_obj_pronunciatio": "\ud83c\udfe0\ud83d\udc69\u200d",
+  "act_obj_event": [
+    "common room sofa",
+    "be occupied by",
+    "Hailey Johnson"
+  ],
+  "chatting_with": null,
+  "chat": null,
+  "chatting_with_buffer": {},
+  "chatting_end_time": null,
+  "act_path_set": true,
+  "planned_path": [
+    [
+      35,
+      28
+    ],
+    [
+      35,
+      29
+    ],
+    [
+      35,
+      30
+    ]
+  ]
+}
