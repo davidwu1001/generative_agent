@@ -291,7 +291,6 @@ def safe_generate_response(prompt,
   for i in range(repeat):
     # curr_gpt_response = GPT_request(prompt, gpt_parameter)
     curr_gpt_response = Qwen_request(prompt, gpt_parameter)
-    print("Qwen回答是\n",curr_gpt_response)
     if func_validate(curr_gpt_response, prompt=prompt):
       return func_clean_up(curr_gpt_response, prompt=prompt)
     if verbose:

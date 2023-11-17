@@ -10,15 +10,7 @@ Variables:
 !<INPUT 6>! -- name
 !<INPUT 7>! -- current_hour
 <commentblockmarker>###</commentblockmarker>
----
-Question: if you are Isabella, what will you do at 06:00 AM in one sentence containing only one action?
-Answer: [(ID:8HPxq5) Monday February 13 -- 06:00 AM] Activity: Isabella is waking up.
----
-Question: if you are Isabella, what will you do at 05:00 AM in one sentence containing only one action?
-Answer: [(ID:rYfoHW) Monday February 13 -- 05:00 AM] Activity: Isabella is sleeping.
----
 !<INPUT 1>!
-!<INPUT 2>!
-!<INPUT 3>!!<INPUT 4>!
+Context: !<INPUT 3>!!<INPUT 4>!
 Question: If you are !<INPUT 6>!, what will you do at !<INPUT 7>! in one sentence containing only predicate and object?
 Answer: !<INPUT 5>!
