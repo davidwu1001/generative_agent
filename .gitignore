@@ -3,6 +3,7 @@ frontend_server/settings/local.py
 storage/*
 static_dirs/*
 environment/frontend_server/storage/*
+environment/frontend_server/storage/25_February_13_2023_06_21_40
 test
 !storage/base_the_ville_isabella_maria_klaus/*
 !storage/base_the_ville_n25/*
@@ -102,3 +103,9 @@ environment/frontend_server/*
 
 # Rope project settings
 .ropeproject
+environment/frontend_server/temp_storage/curr_sim_code.json
+environment/frontend_server/temp_storage/curr_step.json
+reverie/backend_server/reverie.py
+environment/frontend_server/storage/test_1/environment/0.json
+
+.idea
