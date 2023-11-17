@@ -63,15 +63,20 @@ def run_gpt_prompt_wake_up_hour(persona, test_input=None, verbose=False):
     return prompt_input
 
   def __func_clean_up(gpt_response, prompt=""):
-
-    cr = gpt_response.strip()
-
-    # Qwen
-    if cr[0].isalpha():
-      cr = cr[-4:-1]
-
-    cr = int(cr.lower().split("am")[0])
-    return cr
+    # 正则表达式提取数字
+    cr = re.search(r'(\d+)', gpt_response)
+    if cr:
+      return int(cr)
+    else:
+      return 6
+    # cr = gpt_response.strip()
+    #
+    # # Qwen
+    # if cr[0].isalpha():
+    #   cr = cr[-4:-1]
+    #
+    # cr = int(cr.lower().split("am")[0])
+    # return cr
   
   def __func_validate(gpt_response, prompt=""): 
     try: __func_clean_up(gpt_response, prompt="")
