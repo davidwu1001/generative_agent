@@ -63,15 +63,20 @@ def run_gpt_prompt_wake_up_hour(persona, test_input=None, verbose=False):
     return prompt_input
 
   def __func_clean_up(gpt_response, prompt=""):
-
-    cr = gpt_response.strip()
-
-    # Qwen
-    if cr[0].isalpha():
-      cr = cr[-4:-1]
-
-    cr = int(cr.lower().split("am")[0])
-    return cr
+    # 正则表达式提取数字
+    cr = re.search(r'(\d+)', gpt_response)
+    if cr:
+      return int(cr)
+    else:
+      return 6
+    # cr = gpt_response.strip()
+    #
+    # # Qwen
+    # if cr[0].isalpha():
+    #   cr = cr[-4:-1]
+    #
+    # cr = int(cr.lower().split("am")[0])
+    # return cr
   
   def __func_validate(gpt_response, prompt=""): 
     try: __func_clean_up(gpt_response, prompt="")
@@ -143,7 +148,7 @@ def run_gpt_prompt_daily_plan(persona,
   gpt_param = {"engine": "text-davinci-003", "max_tokens": 500,
                "temperature": 1, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-  prompt_template = "persona/prompt_template/v2/daily_planning_v6.txt"
+  prompt_template = "persona/prompt_template/v4/daily_planning.txt"
   prompt_input = create_prompt_input(persona, wake_up_hour, test_input)
   prompt = generate_prompt(prompt_input, prompt_template)
   fail_safe = get_fail_safe()
@@ -210,6 +215,7 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
     prompt_input += [persona.scratch.get_str_iss()]
 
     prompt_input += [prior_schedule + "\n"]
+    print(prior_schedule)
     prompt_input += [intermission_str]
     if intermission2:
       prompt_input += [intermission2]
