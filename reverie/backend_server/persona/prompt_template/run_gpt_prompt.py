@@ -2218,7 +2218,6 @@ def run_gpt_prompt_insight_and_guidance(persona, statements, n, test_input=None,
     return prompt_input
   
   def __func_clean_up(gpt_response, prompt=""):
-    gpt_response = "1. " + gpt_response.strip()
     ret = dict()
     for i in gpt_response.split("\n"): 
       row = i.split(". ")[-1]
