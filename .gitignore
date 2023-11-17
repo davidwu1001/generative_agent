@@ -3,7 +3,7 @@ frontend_server/settings/local.py
 storage/*
 static_dirs/*
 environment/frontend_server/storage/*
-environment/frontend_server/storage/25_February_13_2023_06_21_40
+environment/frontend_server/storage/25_February_13_2023_05_02_40/
 test
 !storage/base_the_ville_isabella_maria_klaus/*
 !storage/base_the_ville_n25/*
