@@ -1,0 +1,199 @@
+{
+  "vision_r": 8,
+  "att_bandwidth": 8,
+  "retention": 8,
+  "curr_time": "February 13, 2023, 05:51:10",
+  "curr_tile": [
+    87,
+    18
+  ],
+  "daily_plan_req": "",
+  "name": "Giorgio Rossi",
+  "first_name": "Giorgio",
+  "last_name": "Rossi",
+  "age": 41,
+  "innate": "analytical, logical, eccentric",
+  "learned": "Giorgio Rossi is a mathematician who loves to solve challenging problems. He is always looking for ways to apply his analytical skills.",
+  "currently": "Giorgio Rossi is working on a research project to explore mathematical patterns in nature. He is also taking classes to stay up to date on new mathematical theories. Giorgio is also curious about who will be running for the local mayor election next month and he talks about it a lot with others.",
+  "lifestyle": "Giorgio Rossi goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.",
+  "living_area": "the Ville:Giorgio Rossi's apartment:main room",
+  "concept_forget": 100,
+  "daily_reflection_time": 180,
+  "daily_reflection_size": 5,
+  "overlap_reflect_th": 4,
+  "kw_strg_event_reflect_th": 10,
+  "kw_strg_thought_reflect_th": 9,
+  "recency_w": 1,
+  "relevance_w": 1,
+  "importance_w": 1,
+  "recency_decay": 0.995,
+  "importance_trigger_max": 250,
+  "importance_trigger_curr": 234,
+  "importance_ele_n": 16,
+  "thought_count": 5,
+  "daily_req": [
+    "wake up and complete the morning routine at 7:00 am",
+    "Have breakfast at 8:00 am",
+    "Work on his research project from 9:00 am to 12:00 pm",
+    "Take a break and go for a walk outside from 12:00 pm to 1:00 pm",
+    "Have lunch at 1:00 pm",
+    "Continue working on his research project from 2:00 pm to 5:00 pm",
+    "Take a break and go for a run from 5:00 pm to 6:00 pm",
+    "Have dinner at 6:00 pm"
+  ],
+  "f_daily_schedule": [
+    [
+      "sleeping",
+      420
+    ],
+    [
+      "waking up (is stretching his body)",
+      10
+    ],
+    [
+      "waking up (is brushing his teeth)",
+      10
+    ],
+    [
+      "waking up (is taking a shower)",
+      10
+    ],
+    [
+      "waking up (is getting dressed)",
+      10
+    ],
+    [
+      "waking up (is making his bed)",
+      10
+    ],
+    [
+      "waking up (is making his bed)",
+      10
+    ],
+    [
+      "having breakfast",
+      60
+    ],
+    [
+      "working on his research project",
+      180
+    ],
+    [
+      "going for a walk outside",
+      120
+    ],
+    [
+      "working on his research project",
+      120
+    ],
+    [
+      "enjoying a cup of tea while reading a book about mathematical history",
+      60
+    ],
+    [
+      "going for a run",
+      60
+    ],
+    [
+      "having dinner at 6:00 pm",
+      60
+    ],
+    [
+      "enjoying dinner at 07:00 PM",
+      60
+    ],
+    [
+      "enjoying dinner",
+      60
+    ],
+    [
+      "working on his research project",
+      120
+    ],
+    [
+      "currently working on his research project",
+      60
+    ],
+    [
+      "sleeping",
+      0
+    ]
+  ],
+  "f_daily_schedule_hourly_org": [
+    [
+      "sleeping",
+      420
+    ],
+    [
+      "waking up",
+      60
+    ],
+    [
+      "having breakfast",
+      60
+    ],
+    [
+      "working on his research project",
+      180
+    ],
+    [
+      "going for a walk outside",
+      120
+    ],
+    [
+      "working on his research project",
+      120
+    ],
+    [
+      "enjoying a cup of tea while reading a book about mathematical history",
+      60
+    ],
+    [
+      "going for a run",
+      60
+    ],
+    [
+      "having dinner at 6:00 pm",
+      60
+    ],
+    [
+      "enjoying dinner at 07:00 PM",
+      60
+    ],
+    [
+      "enjoying dinner",
+      60
+    ],
+    [
+      "working on his research project",
+      120
+    ],
+    [
+      "currently working on his research project",
+      60
+    ]
+  ],
+  "act_address": "the Ville:Giorgio Rossi's apartment:main room:bed",
+  "act_start_time": "February 13, 2023, 00:00:00",
+  "act_duration": 420,
+  "act_description": "sleeping",
+  "act_pronunciatio": "\ud83d\udecc\ud83d\udca4",
+  "act_event": [
+    "Giorgio Rossi",
+    "sleep",
+    "None"
+  ],
+  "act_obj_description": "being used by Giorgio Rossi for sleeping",
+  "act_obj_pronunciatio": "\ud83d\udecc\ud83d\ude34",
+  "act_obj_event": [
+    "bed",
+    "be used by",
+    "Giorgio Rossi"
+  ],
+  "chatting_with": null,
+  "chat": null,
+  "chatting_with_buffer": {},
+  "chatting_end_time": null,
+  "act_path_set": true,
+  "planned_path": []
+}
