@@ -9,6 +9,7 @@ import re
 import datetime
 import sys
 import ast
+import regex
 
 sys.path.append('../../')
 
@@ -881,7 +882,15 @@ def run_gpt_prompt_pronunciatio(action_description, persona, verbose=False):
 
   # ChatGPT Plugin ===========================================================
   def __chat_func_clean_up(gpt_response, prompt=""): ############
-    cr = gpt_response.strip()
+    # 使用正则表达式提取文本中的emoji表情符号
+    emojis = regex.findall(r'\X', gpt_response)
+
+    # 过滤出emoji表情符号
+    emojis = [char for char in emojis if any(char in range(0x1F000, 0x1FAFF) for char in map(ord, char))]
+    output = ''.join(emojis)
+
+    # 只取前两个emoji表情
+    cr = output.strip()
     if len(cr) > 3:
       cr = cr[:3]
     return cr
