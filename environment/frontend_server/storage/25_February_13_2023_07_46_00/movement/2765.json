@@ -1,0 +1,266 @@
+{
+  "persona": {
+    "Latoya Williams": {
+      "movement": [
+        41,
+        26
+      ],
+      "pronunciatio": "\ud83c\udf73\ud83c\udf73",
+      "description": "preparing breakfast (is cracking the eggs into the pan) @ the Ville:artist's co-living space:kitchen:cooking area",
+      "chat": null
+    },
+    "Rajiv Patel": {
+      "movement": [
+        25,
+        18
+      ],
+      "pronunciatio": "\ud83d\ude34\u5e8a\u57ab",
+      "description": "sleeping @ the Ville:artist's co-living space:Rajiv Patel's room:bed",
+      "chat": null
+    },
+    "Abigail Chen": {
+      "movement": [
+        36,
+        18
+      ],
+      "pronunciatio": "\ud83d\ude34\u5e8a\u57ab",
+      "description": "sleeping @ the Ville:artist's co-living space:Abigail Chen's room:bed",
+      "chat": null
+    },
+    "Francisco Lopez": {
+      "movement": [
+        21,
+        30
+      ],
+      "pronunciatio": "\ud83e\uddb7\u6c99\u9f99",
+      "description": "awake (is brushing their teeth and doing their hair) @ the Ville:artist's co-living space:Francisco Lopez's bathroom:bathroom sink",
+      "chat": null
+    },
+    "Hailey Johnson": {
+      "movement": [
+        40,
+        30
+      ],
+      "pronunciatio": "\ud83d\udcac",
+      "description": "conversing about discussing their plans to run for local office and what inspired Sam Moore to run for mayor. @ <persona> Sam Moore",
+      "chat": [
+        [
+          "Hailey Johnson",
+          "Hey Sam, how's it going? I saw you taking a walk earlier, did you get a chance to enjoy the park?"
+        ],
+        [
+          "Sam Moore",
+          "Yes, I did. It's such a beautiful park, isn't it? And I'm actually planning on running for local mayor in the upcoming election. I was just telling my wife Jennifer about it."
+        ],
+        [
+          "Hailey Johnson",
+          "That's exciting! I've been meaning to run for local office too, but I haven't decided on what position yet. What inspired you to run for mayor?"
+        ],
+        [
+          "Sam Moore",
+          "Well, I've always been passionate about serving my community and making it a better place for everyone. I think I have the skills and experience to make a positive impact as mayor."
+        ]
+      ]
+    },
+    "Arthur Burton": {
+      "movement": [
+        57,
+        17
+      ],
+      "pronunciatio": "\u043e\u0434\u0435",
+      "description": "awake (is getting dressed) @ the Ville:Arthur Burton's apartment:main room:closet",
+      "chat": null
+    },
+    "Ryan Park": {
+      "movement": [
+        66,
+        19
+      ],
+      "pronunciatio": "\ud83d\ude34\u5e8a\u57ab",
+      "description": "sleeping @ the Ville:Ryan Park's apartment:main room:bed",
+      "chat": null
+    },
+    "Isabella Rodriguez": {
+      "movement": [
+        75,
+        14
+      ],
+      "pronunciatio": "\ud83c\udf73\ud83c\udf73",
+      "description": "awake (is eating breakfast) @ the Ville:Isabella Rodriguez's apartment:main room:refrigerator",
+      "chat": null
+    },
+    "Giorgio Rossi": {
+      "movement": [
+        87,
+        20
+      ],
+      "pronunciatio": "\ud83d\udecf\ufe0f\ud83e\uddf9",
+      "description": "waking up (is making his bed) @ the Ville:Giorgio Rossi's apartment:main room:bed",
+      "chat": null
+    },
+    "Carlos Gomez": {
+      "movement": [
+        96,
+        19
+      ],
+      "pronunciatio": "\u2615\ufe0f\u2615",
+      "description": "awake (is having a cup of coffee) @ the Ville:Carlos Gomez's apartment:main room:kitchen sink",
+      "chat": null
+    },
+    "Klaus Mueller": {
+      "movement": [
+        123,
+        50
+      ],
+      "pronunciatio": "\u231b",
+      "description": "waiting to start is checking the time to make sure he has enough time to get to the library on time @ <waiting> 123 50",
+      "chat": null
+    },
+    "Maria Lopez": {
+      "movement": [
+        119,
+        49
+      ],
+      "pronunciatio": "\uad8cNe",
+      "description": "awake (is taking a break to have a snack) @ the Ville:Dorm for Oak Hill College:common room:common room table",
+      "chat": null
+    },
+    "Ayesha Khan": {
+      "movement": [
+        115,
+        61
+      ],
+      "pronunciatio": "\ud83d\udcbc\ud83d\udcbc",
+      "description": "preparing for her day by getting ready for college (is packing her bag) @ the Ville:Dorm for Oak Hill College:Ayesha Khan's room:closet",
+      "chat": null
+    },
+    "Wolfgang Schulz": {
+      "movement": [
+        111,
+        60
+      ],
+      "pronunciatio": "(AL",
+      "description": "finishing up his morning routine and getting ready for the day. @ the Ville:Dorm for Oak Hill College:Wolfgang Schulz's room:closet",
+      "chat": null
+    },
+    "Mei Lin": {
+      "movement": [
+        90,
+        73
+      ],
+      "pronunciatio": "\ud83d\udecf\ufe0f\ud83d\udebf",
+      "description": "waking up (is getting out of bed) @ the Ville:Lin family's house:Mei and John Lin's bedroom:bed",
+      "chat": null
+    },
+    "John Lin": {
+      "movement": [
+        93,
+        65
+      ],
+      "pronunciatio": "\ud83c\udf5e\ud83e\uddc8\u2615",
+      "description": "having breakfast (eating his toast with butter and tea) @ the Ville:Lin family's house:kitchen:kitchen sink",
+      "chat": null
+    },
+    "Eddy Lin": {
+      "movement": [
+        94,
+        74
+      ],
+      "pronunciatio": "\ud83d\udecf\ufe0f\ud83d\udebf",
+      "description": "waking up (is making his bed) @ the Ville:Lin family's house:Eddy Lin's bedroom:bed",
+      "chat": null
+    },
+    "Tom Moreno": {
+      "movement": [
+        79,
+        67
+      ],
+      "pronunciatio": "\ud83d\udebf\ud83e\uddfa",
+      "description": "waking up (is taking a shower) @ the Ville:Moreno family's house:bathroom:shower",
+      "chat": null
+    },
+    "Jane Moreno": {
+      "movement": [
+        75,
+        66
+      ],
+      "pronunciatio": "\ud83c\udf73\u53a8",
+      "description": "preparing breakfast for the family (heating up the pan for frying) @ the Ville:Moreno family's house:kitchen:cooking area",
+      "chat": null
+    },
+    "Tamara Taylor": {
+      "movement": [
+        55,
+        67
+      ],
+      "pronunciatio": "\ud83c\udf5e\ud83d\ude0b",
+      "description": "having breakfast (is eating the toast) @ the Ville:Tamara Taylor and Carmen Ortiz's house:common room:common room table",
+      "chat": null
+    },
+    "Carmen Ortiz": {
+      "movement": [
+        61,
+        69
+      ],
+      "pronunciatio": "\ud83d\udc57 \uc544",
+      "description": "waking up (is getting dressed) @ the Ville:Tamara Taylor and Carmen Ortiz's house:Carmen Ortiz's room:closet",
+      "chat": null
+    },
+    "Sam Moore": {
+      "movement": [
+        36,
+        33
+      ],
+      "pronunciatio": "\ud83d\udcac",
+      "description": "conversing about discussing their plans to run for local office and what inspired Sam Moore to run for mayor. @ <persona> Hailey Johnson",
+      "chat": [
+        [
+          "Hailey Johnson",
+          "Hey Sam, how's it going? I saw you taking a walk earlier, did you get a chance to enjoy the park?"
+        ],
+        [
+          "Sam Moore",
+          "Yes, I did. It's such a beautiful park, isn't it? And I'm actually planning on running for local mayor in the upcoming election. I was just telling my wife Jennifer about it."
+        ],
+        [
+          "Hailey Johnson",
+          "That's exciting! I've been meaning to run for local office too, but I haven't decided on what position yet. What inspired you to run for mayor?"
+        ],
+        [
+          "Sam Moore",
+          "Well, I've always been passionate about serving my community and making it a better place for everyone. I think I have the skills and experience to make a positive impact as mayor."
+        ]
+      ]
+    },
+    "Jennifer Moore": {
+      "movement": [
+        50,
+        37
+      ],
+      "pronunciatio": "\ud83d\uddbc\ufe0f\ud83e\udde7",
+      "description": "reviewing and preparing for the upcoming exhibition (is organizing her selected paintings by size and color) @ the Ville:Moore family's house:main room:closet",
+      "chat": null
+    },
+    "Yuriko Yamamoto": {
+      "movement": [
+        31,
+        61
+      ],
+      "pronunciatio": "\ud83d\udcf1\ud83d\udcbb",
+      "description": "awakening (checking her phone for any urgent messages or emails) @ the Ville:Yuriko Yamamoto's house:main room:cooking area",
+      "chat": null
+    },
+    "Adam Smith": {
+      "movement": [
+        21,
+        62
+      ],
+      "pronunciatio": "\ud83d\udcda\ud83d\udcdd",
+      "description": "awake (is reviewing his notes on the local mayor election) @ the Ville:Adam Smith's house:main room:desk",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 07:40:50"
+  }
+}

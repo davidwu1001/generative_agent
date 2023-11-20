@@ -1,0 +1,362 @@
+{
+  "vision_r": 8,
+  "att_bandwidth": 8,
+  "retention": 8,
+  "curr_time": "February 13, 2023, 07:46:00",
+  "curr_tile": [
+    115,
+    61
+  ],
+  "daily_plan_req": "Ayesha Khan goes to the library at Oak Hill College to take classes from 10am to 2pm, and then spends her days studying at the library.",
+  "name": "Ayesha Khan",
+  "first_name": "Ayesha",
+  "last_name": "Khan",
+  "age": 20,
+  "innate": "curious, determined, independent",
+  "learned": "Ayesha Khan is a college student who loves to explore literature. She is curious and determined to understand the nuances of each work.",
+  "currently": "Ayesha Khan is researching for her senior thesis on the use of language in Shakespeare\u9225\u6a9a plays. She is also taking classes to learn more about writing.",
+  "lifestyle": "Ayesha Khan goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.",
+  "living_area": "the Ville:Dorm for Oak Hill College:Ayesha Khan's room",
+  "concept_forget": 100,
+  "daily_reflection_time": 180,
+  "daily_reflection_size": 5,
+  "overlap_reflect_th": 4,
+  "kw_strg_event_reflect_th": 10,
+  "kw_strg_thought_reflect_th": 9,
+  "recency_w": 1,
+  "relevance_w": 1,
+  "importance_w": 1,
+  "recency_decay": 0.995,
+  "importance_trigger_max": 250,
+  "importance_trigger_curr": 49,
+  "importance_ele_n": 119,
+  "thought_count": 5,
+  "daily_req": [
+    "wake up and complete the morning routine at 6:00 am",
+    "Leave for Oak Hill College at 8:00 am",
+    "Attend classes at the library from 10:00 am to 2:00 pm",
+    "Have lunch at the college canteen at 12:30 pm",
+    "Spend the afternoon studying at the library from 2:00 pm to 5:00 pm",
+    "Have dinner at a nearby restaurant at 6:00 pm",
+    "Return home and continue studying until 10:00 pm"
+  ],
+  "f_daily_schedule": [
+    [
+      "sleeping",
+      360
+    ],
+    [
+      "waking up (is stretching her body)",
+      10
+    ],
+    [
+      "waking up (is brushing her teeth)",
+      5
+    ],
+    [
+      "waking up (is washing her face)",
+      5
+    ],
+    [
+      "waking up (on the way to is getting dressed)",
+      0
+    ],
+    [
+      "waking up (conversing about conversing about how Maria Lopez and Ayesha are doing today)",
+      1
+    ],
+    [
+      "waking up (is getting dressed)",
+      9
+    ],
+    [
+      "waking up (is brewing a cup of coffee)",
+      5
+    ],
+    [
+      "waking up (is combing her hair)",
+      5
+    ],
+    [
+      "waking up (is doing some light exercise to get her blood flowing)",
+      10
+    ],
+    [
+      "waking up (is checking the time to make sure she has enough time to get ready for college)",
+      10
+    ],
+    [
+      "preparing for her day by getting ready for college (is brushing her teeth)",
+      10
+    ],
+    [
+      "preparing for her day by getting ready for college (on the way to is taking a shower)",
+      0
+    ],
+    [
+      "preparing for her day by getting ready for college (conversing about conversing about how Ayesha is doing today)",
+      1
+    ],
+    [
+      "preparing for her day by getting ready for college (is getting dressed)",
+      9
+    ],
+    [
+      "preparing for her day by getting ready for college (on the way to is combing her hair)",
+      0
+    ],
+    [
+      "preparing for her day by getting ready for college (conversing about Good morning Wolfgang! How are you doing today?)",
+      1
+    ],
+    [
+      "preparing for her day by getting ready for college (is putting on makeup)",
+      9
+    ],
+    [
+      "preparing for her day by getting ready for college (is packing her bag)",
+      10
+    ],
+    [
+      "preparing for her day by getting ready for college (is leaving for Oak Hill College)",
+      10
+    ],
+    [
+      "preparing for her day by getting ready for college (is packing her bag)",
+      10
+    ],
+    [
+      "leaving for Oak Hill College (is checking the weather forecast to make sure she is dressed appropriately for the day)",
+      10
+    ],
+    [
+      "leaving for Oak Hill College (is reviewing her class schedule to make sure she knows where and when her classes are)",
+      10
+    ],
+    [
+      "leaving for Oak Hill College (is grabbing her laptop and textbooks to bring with her to college)",
+      10
+    ],
+    [
+      "leaving for Oak Hill College (is leaving her house to go to Oak Hill College)",
+      10
+    ],
+    [
+      "leaving for Oak Hill College (is putting on her shoes and grabbing her bag to leave for Oak Hill College)",
+      10
+    ],
+    [
+      "leaving for Oak Hill College (is leaving for Oak Hill College)",
+      10
+    ],
+    [
+      "preparing for her classes at Oak Hill College",
+      60
+    ],
+    [
+      "attending classes at the library",
+      60
+    ],
+    [
+      "currently attending classes at the library",
+      60
+    ],
+    [
+      "having lunch at the college canteen",
+      60
+    ],
+    [
+      "attending classes at the library",
+      60
+    ],
+    [
+      "currently attending classes at the library",
+      60
+    ],
+    [
+      "studying at the library",
+      180
+    ],
+    [
+      "having dinner at a nearby restaurant",
+      60
+    ],
+    [
+      "currently spending her time studying at the library",
+      60
+    ],
+    [
+      "leaving for Oak Hill College to attend classes at the library from 10:00 am to 2:00 pm",
+      60
+    ],
+    [
+      "currently studying at the library",
+      120
+    ],
+    [
+      "studying at the library",
+      60
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ]
+  ],
+  "f_daily_schedule_hourly_org": [
+    [
+      "sleeping",
+      360
+    ],
+    [
+      "waking up",
+      60
+    ],
+    [
+      "preparing for her day by getting ready for college",
+      60
+    ],
+    [
+      "leaving for Oak Hill College",
+      60
+    ],
+    [
+      "preparing for her classes at Oak Hill College",
+      60
+    ],
+    [
+      "attending classes at the library",
+      60
+    ],
+    [
+      "currently attending classes at the library",
+      60
+    ],
+    [
+      "having lunch at the college canteen",
+      60
+    ],
+    [
+      "attending classes at the library",
+      60
+    ],
+    [
+      "currently attending classes at the library",
+      60
+    ],
+    [
+      "studying at the library",
+      180
+    ],
+    [
+      "having dinner at a nearby restaurant",
+      60
+    ],
+    [
+      "currently spending her time studying at the library",
+      60
+    ],
+    [
+      "leaving for Oak Hill College to attend classes at the library from 10:00 am to 2:00 pm",
+      60
+    ],
+    [
+      "currently studying at the library",
+      120
+    ],
+    [
+      "studying at the library",
+      60
+    ]
+  ],
+  "act_address": "the Ville:Dorm for Oak Hill College:Ayesha Khan's room:closet",
+  "act_start_time": "February 13, 2023, 07:36:00",
+  "act_duration": 10,
+  "act_description": "preparing for her day by getting ready for college (is packing her bag)",
+  "act_pronunciatio": "\ud83d\udcbc\ud83d\udcbc",
+  "act_event": [
+    "Ayesha Khan",
+    "pack",
+    "bag"
+  ],
+  "act_obj_description": "being used by Ayesha Khan for packing her bag",
+  "act_obj_pronunciatio": "\ud83d\udcbc\ud83d\udc69\u200d",
+  "act_obj_event": [
+    "closet",
+    "be used by",
+    "Ayesha Khan for packing her bag"
+  ],
+  "chatting_with": null,
+  "chat": null,
+  "chatting_with_buffer": {
+    "Maria Lopez": 266,
+    "Klaus Mueller": 542,
+    "Wolfgang Schulz": 632
+  },
+  "chatting_end_time": null,
+  "act_path_set": true,
+  "planned_path": []
+}
