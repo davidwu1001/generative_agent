@@ -1,0 +1,469 @@
+{
+  "vision_r": 8,
+  "att_bandwidth": 8,
+  "retention": 8,
+  "curr_time": "February 13, 2023, 07:45:50",
+  "curr_tile": [
+    35,
+    45
+  ],
+  "daily_plan_req": "Sam Moore likes to talk a walk around Johnson Park, and sit at Hobbs cafe reading.",
+  "name": "Sam Moore",
+  "first_name": "Sam",
+  "last_name": "Moore",
+  "age": 65,
+  "innate": "wise, resourceful, humorous",
+  "learned": "Sam Moore is a retired navy officer who loves to share stories from his time in the military. He is always full of interesting stories and advice.",
+  "currently": "Sam Moore lives with his wife of 40 years, Jennifer Moore, and spends his free time tending the park and is an avid reader. Sam is planning on running for local mayor in the upcoming election and he is telling is neighbors about it",
+  "lifestyle": "Sam Moore goes to bed around 9pm, awakes up around 5am, eats dinner around 5pm.",
+  "living_area": "the Ville:Moore family's house:main room",
+  "concept_forget": 100,
+  "daily_reflection_time": 180,
+  "daily_reflection_size": 5,
+  "overlap_reflect_th": 4,
+  "kw_strg_event_reflect_th": 10,
+  "kw_strg_thought_reflect_th": 9,
+  "recency_w": 1,
+  "relevance_w": 1,
+  "importance_w": 1,
+  "recency_decay": 0.995,
+  "importance_trigger_max": 250,
+  "importance_trigger_curr": 27,
+  "importance_ele_n": 79,
+  "thought_count": 5,
+  "daily_req": [
+    "wake up and complete the morning routine at 5:00 am",
+    "Take a walk around Johnson Park at 6:00 am",
+    "Have breakfast at 7:00 am",
+    "Spend some time reading at Hobbs cafe from 9:00 am to 11:00 am",
+    "Return home and spend some time working on his campaign for local mayor from 11:00 am to 1:00 pm",
+    "Have lunch at 1:00 pm",
+    "Take a nap from 2:00 pm to 4:00 pm",
+    "Spend some time with his wife Jennifer from 4:00 pm to 6:00 pm"
+  ],
+  "f_daily_schedule": [
+    [
+      "sleeping",
+      300
+    ],
+    [
+      "awakening at 5:00 am (is waking up)",
+      10
+    ],
+    [
+      "awakening at 5:00 am (on the way to is stretching his body)",
+      0
+    ],
+    [
+      "awakening at 5:00 am (conversing about conversing about their sleep quality)",
+      1
+    ],
+    [
+      "awakening at 5:00 am (is brushing his teeth)",
+      10
+    ],
+    [
+      "awakening at 5:00 am (is getting dressed)",
+      10
+    ],
+    [
+      "awakening at 5:00 am (is brewing a cup of coffee)",
+      10
+    ],
+    [
+      "awakening at 5:00 am (is eating breakfast)",
+      10
+    ],
+    [
+      "taking a walk around Johnson Park (is taking a walk around Johnson Park)",
+      10
+    ],
+    [
+      "taking a walk around Johnson Park (is admiring the flowers in the park)",
+      10
+    ],
+    [
+      "taking a walk around Johnson Park (on the way to is enjoying the fresh air and sunshine while taking a walk around Johnson Park)",
+      0
+    ],
+    [
+      "taking a walk around Johnson Park (conversing about conversing about exercise and the park)",
+      1
+    ],
+    [
+      "taking a walk around Johnson Park (is taking a deep breath and feeling grateful for the beauty of nature around him)",
+      9
+    ],
+    [
+      "taking a walk around Johnson Park (is observing the children playing in the park)",
+      10
+    ],
+    [
+      "taking a walk around Johnson Park (on the way to is taking a stroll around the park)",
+      0
+    ],
+    [
+      "taking a walk around Johnson Park (waiting to start is observing the children playing in the park)",
+      11
+    ],
+    [
+      "having breakfast (on the way to is reviewing the menu at Hobbs cafe)",
+      0
+    ],
+    [
+      "having breakfast (conversing about conversing about each other's well-being and sleep quality)",
+      1
+    ],
+    [
+      "having breakfast (is ordering his breakfast)",
+      8
+    ],
+    [
+      "having breakfast (is waiting for his breakfast to be served)",
+      10
+    ],
+    [
+      "having breakfast (is eating his breakfast)",
+      10
+    ],
+    [
+      "having breakfast (is paying for his breakfast)",
+      10
+    ],
+    [
+      "having breakfast (is leaving the cafe)",
+      10
+    ],
+    [
+      "taking a walk around Johnson Park (on the way to taking a walk around Johnson Par)",
+      0
+    ],
+    [
+      "taking a walk around Johnson Park (conversing about conversing about the exhibition preparation and if Jennifer needs any help.)",
+      1
+    ],
+    [
+      "taking a walk around Johnson Park (conversing about the exhibition preparation and if Jennifer needs any help.)",
+      9
+    ],
+    [
+      "taking a walk around Johnson Park (on the way to taking a walk around Johnson Par)",
+      0
+    ],
+    [
+      "taking a walk around Johnson Park (conversing about discussing their plans to run for local office and what inspired Sam Moore to run for mayor.)",
+      3
+    ],
+    [
+      "taking a walk around Johnson Park",
+      17
+    ],
+    [
+      "sitting at Hobbs cafe reading (is sitting at Hobbs cafe reading)",
+      10
+    ],
+    [
+      "sitting at Hobbs cafe reading (is enjoying his coffee)",
+      10
+    ],
+    [
+      "sitting at Hobbs cafe reading (is flipping through the pages of his book)",
+      10
+    ],
+    [
+      "sitting at Hobbs cafe reading (is enjoying the ambiance of the cafe)",
+      10
+    ],
+    [
+      "sitting at Hobbs cafe reading (is sipping his coffee)",
+      10
+    ],
+    [
+      "sitting at Hobbs cafe reading (is flipping through the pages of his book)",
+      10
+    ],
+    [
+      "sitting at Hobbs cafe reading (is taking a break from reading and chatting with the barista)",
+      10
+    ],
+    [
+      "sitting at Hobbs cafe reading (is turning the pages of his book)",
+      10
+    ],
+    [
+      "sitting at Hobbs cafe reading (is reading the next chapter of his book)",
+      10
+    ],
+    [
+      "sitting at Hobbs cafe reading (is enjoying the peaceful atmosphere of the cafe)",
+      10
+    ],
+    [
+      "sitting at Hobbs cafe reading (is turning the pages of his book)",
+      10
+    ],
+    [
+      "sitting at Hobbs cafe reading (is taking a sip of his coffee)",
+      10
+    ],
+    [
+      "working on his campaign for local mayor",
+      60
+    ],
+    [
+      "enjoying a leisurely lunch at home with his wife Jennifer",
+      60
+    ],
+    [
+      "having lunch",
+      60
+    ],
+    [
+      "taking a nap",
+      60
+    ],
+    [
+      "taking a nap from 2:00 pm to 4:00 pm",
+      60
+    ],
+    [
+      "spending some time with his wife Jennifer",
+      60
+    ],
+    [
+      "awake and completing his morning routine",
+      60
+    ],
+    [
+      "taking a walk around Johnson Park",
+      60
+    ],
+    [
+      "enjoying dinner with his wife at home",
+      60
+    ],
+    [
+      "reading at Hobbs cafe",
+      60
+    ],
+    [
+      "sitting at Hobbs cafe reading",
+      60
+    ],
+    [
+      " retired, he will likely go to bed at 9pm, so he will not be doing anything at 10:00 PM",
+      60
+    ],
+    [
+      "Asleep in bed, ready to get a good night's rest before the next day's activities",
+      60
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      9
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      50
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ]
+  ],
+  "f_daily_schedule_hourly_org": [
+    [
+      "sleeping",
+      300
+    ],
+    [
+      "awakening at 5:00 am",
+      60
+    ],
+    [
+      "taking a walk around Johnson Park",
+      60
+    ],
+    [
+      "having breakfast",
+      60
+    ],
+    [
+      "taking a walk around Johnson Park",
+      60
+    ],
+    [
+      "sitting at Hobbs cafe reading",
+      120
+    ],
+    [
+      "working on his campaign for local mayor",
+      60
+    ],
+    [
+      "enjoying a leisurely lunch at home with his wife Jennifer",
+      60
+    ],
+    [
+      "having lunch",
+      60
+    ],
+    [
+      "taking a nap",
+      60
+    ],
+    [
+      "taking a nap from 2:00 pm to 4:00 pm",
+      60
+    ],
+    [
+      "spending some time with his wife Jennifer",
+      60
+    ],
+    [
+      "awake and completing his morning routine",
+      60
+    ],
+    [
+      "taking a walk around Johnson Park",
+      60
+    ],
+    [
+      "enjoying dinner with his wife at home",
+      60
+    ],
+    [
+      "reading at Hobbs cafe",
+      60
+    ],
+    [
+      "sitting at Hobbs cafe reading",
+      60
+    ],
+    [
+      " retired, he will likely go to bed at 9pm, so he will not be doing anything at 10:00 PM",
+      60
+    ],
+    [
+      "Asleep in bed, ready to get a good night's rest before the next day's activities",
+      60
+    ]
+  ],
+  "act_address": "the Ville:Johnson Park:park:park garden",
+  "act_start_time": "February 13, 2023, 07:45:00",
+  "act_duration": 17,
+  "act_description": "taking a walk around Johnson Park",
+  "act_pronunciatio": "\ud83d\udeb6\u200d\u2640",
+  "act_event": [
+    "Sam Moore",
+    "take a walk",
+    "Johnson Park"
+  ],
+  "act_obj_description": "being used by Sam Moore for a walk",
+  "act_obj_pronunciatio": "\ud83d\udeb6\u200d\u2642",
+  "act_obj_event": [
+    "park garden",
+    "be used by",
+    "Sam Moore for a walk"
+  ],
+  "chatting_with": null,
+  "chat": null,
+  "chatting_with_buffer": {
+    "Jennifer Moore": 668,
+    "Adam Smith": 188,
+    "Wolfgang Schulz": 380,
+    "Hailey Johnson": 776
+  },
+  "chatting_end_time": null,
+  "act_path_set": true,
+  "planned_path": [
+    [
+      34,
+      44
+    ],
+    [
+      34,
+      43
+    ],
+    [
+      34,
+      42
+    ]
+  ]
+}

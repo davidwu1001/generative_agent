@@ -1,0 +1,318 @@
+{
+  "vision_r": 8,
+  "att_bandwidth": 8,
+  "retention": 8,
+  "curr_time": "February 13, 2023, 07:45:50",
+  "curr_tile": [
+    93,
+    65
+  ],
+  "daily_plan_req": "John Lin goes to the Willow Market and Pharmacy around 9am to open the pharmacy counter. He stands behind the counter until 5pm and returns home.",
+  "name": "John Lin",
+  "first_name": "John",
+  "last_name": "Lin",
+  "age": 45,
+  "innate": "patient, kind, organized",
+  "learned": "John Lin is a pharmacy shop keeper at the Willow Market and Pharmacy who loves to help people. He is always looking for ways to make the process of getting medication easier for his customers.",
+  "currently": "John Lin is living with his wife, Mei Lin, and son, Eddy Lin, and is shop keeping a pharmacy at the Willow Market and Pharmacy. He is also taking online classes to stay up to date on new medications and treatments. John is also curious about who will be running for the local mayor election next month and he is asking everyone he meets about who will be running in the election.",
+  "lifestyle": "John Lin goes to bed around 10pm, awakes up around 6am, eats dinner around 5pm.",
+  "living_area": "the Ville:Lin family's house:Mei and John Lin's bedroom",
+  "concept_forget": 100,
+  "daily_reflection_time": 180,
+  "daily_reflection_size": 5,
+  "overlap_reflect_th": 4,
+  "kw_strg_event_reflect_th": 10,
+  "kw_strg_thought_reflect_th": 9,
+  "recency_w": 1,
+  "relevance_w": 1,
+  "importance_w": 1,
+  "recency_decay": 0.995,
+  "importance_trigger_max": 250,
+  "importance_trigger_curr": 96,
+  "importance_ele_n": 86,
+  "thought_count": 5,
+  "daily_req": [
+    "wake up and complete the morning routine at 6:00 am",
+    "Have breakfast at 7:00 am",
+    "Leave for the Willow Market and Pharmacy at 8:00 am",
+    "Open the pharmacy counter at 9:00 am",
+    "Serve customers and answer their questions about medications and treatments until 5:00 pm",
+    "Close the pharmacy counter and clean up",
+    "Go home and spend some time with his family",
+    "Have dinner at 6:00 pm"
+  ],
+  "f_daily_schedule": [
+    [
+      "sleeping",
+      360
+    ],
+    [
+      "awake (stretching his body)",
+      10
+    ],
+    [
+      "awake (brushing his teeth)",
+      10
+    ],
+    [
+      "awake (getting dressed)",
+      10
+    ],
+    [
+      "awake (taking a shower)",
+      10
+    ],
+    [
+      "awake (combing his hair)",
+      10
+    ],
+    [
+      "awake (having breakfast)",
+      10
+    ],
+    [
+      "having breakfast (boiling water for tea)",
+      10
+    ],
+    [
+      "having breakfast (on the way to on the way to slicing bread for toast)",
+      0
+    ],
+    [
+      "having breakfast (conversing about conversing about their sleep quality last night)",
+      1
+    ],
+    [
+      "having breakfast (slicing bread for toast)",
+      9
+    ],
+    [
+      "having breakfast (spreading butter on the toast)",
+      10
+    ],
+    [
+      "having breakfast (pouring tea into a cup)",
+      10
+    ],
+    [
+      "having breakfast (eating his toast with butter and tea)",
+      10
+    ],
+    [
+      "having breakfast (enjoying his breakfast)",
+      10
+    ],
+    [
+      "leaving for the Willow Market and Pharmacy (getting dressed)",
+      10
+    ],
+    [
+      "leaving for the Willow Market and Pharmacy (brushing his teeth)",
+      5
+    ],
+    [
+      "leaving for the Willow Market and Pharmacy (having breakfast)",
+      10
+    ],
+    [
+      "leaving for the Willow Market and Pharmacy (packing his bag with necessary items for the day)",
+      10
+    ],
+    [
+      "leaving for the Willow Market and Pharmacy (checking the weather forecast to plan his outfit)",
+      5
+    ],
+    [
+      "leaving for the Willow Market and Pharmacy (reviewing his schedule for the day)",
+      5
+    ],
+    [
+      "leaving for the Willow Market and Pharmacy (leaving his house to go to the Willow Market and Pharmacy)",
+      5
+    ],
+    [
+      "leaving for the Willow Market and Pharmacy (locking the door to his house)",
+      10
+    ],
+    [
+      "Opening the pharmacy counter at the Willow Market and Pharmacy",
+      60
+    ],
+    [
+      "serving customers at the pharmacy counter",
+      60
+    ],
+    [
+      "serving customers and answering their questions about medications and treatments",
+      60
+    ],
+    [
+      "serving customers and answering their questions about medications and treatments at the pharmacy counter",
+      360
+    ],
+    [
+      "having dinner at 6:00 pm with his family",
+      60
+    ],
+    [
+      "having dinner at 6:00 pm",
+      60
+    ],
+    [
+      "enjoying dinner with his family",
+      60
+    ],
+    [
+      "serving customers and answering their questions about medications and treatments at the pharmacy counter",
+      60
+    ],
+    [
+      "asleep in bed",
+      60
+    ],
+    [
+      "sleeping at home with his family",
+      60
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ]
+  ],
+  "f_daily_schedule_hourly_org": [
+    [
+      "sleeping",
+      360
+    ],
+    [
+      "awake",
+      60
+    ],
+    [
+      "having breakfast",
+      60
+    ],
+    [
+      "leaving for the Willow Market and Pharmacy",
+      60
+    ],
+    [
+      "Opening the pharmacy counter at the Willow Market and Pharmacy",
+      60
+    ],
+    [
+      "serving customers at the pharmacy counter",
+      60
+    ],
+    [
+      "serving customers and answering their questions about medications and treatments",
+      60
+    ],
+    [
+      "serving customers and answering their questions about medications and treatments at the pharmacy counter",
+      360
+    ],
+    [
+      "having dinner at 6:00 pm with his family",
+      60
+    ],
+    [
+      "having dinner at 6:00 pm",
+      60
+    ],
+    [
+      "enjoying dinner with his family",
+      60
+    ],
+    [
+      "serving customers and answering their questions about medications and treatments at the pharmacy counter",
+      60
+    ],
+    [
+      "asleep in bed",
+      60
+    ],
+    [
+      "sleeping at home with his family",
+      60
+    ]
+  ],
+  "act_address": "the Ville:Lin family's house:kitchen:kitchen sink",
+  "act_start_time": "February 13, 2023, 07:40:00",
+  "act_duration": 10,
+  "act_description": "having breakfast (eating his toast with butter and tea)",
+  "act_pronunciatio": "\ud83c\udf5e\ud83e\uddc8\u2615",
+  "act_event": [
+    "John Lin",
+    "eat",
+    "toast with butter and tea"
+  ],
+  "act_obj_description": "untouched",
+  "act_obj_pronunciatio": "\u7ee7\u7eed\u4fdd",
+  "act_obj_event": [
+    "kitchen sink",
+    "be",
+    "untouched"
+  ],
+  "chatting_with": null,
+  "chat": null,
+  "chatting_with_buffer": {
+    "Eddy Lin": 572,
+    "Mei Lin": 584
+  },
+  "chatting_end_time": null,
+  "act_path_set": true,
+  "planned_path": []
+}

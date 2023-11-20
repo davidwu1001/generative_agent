@@ -1,0 +1,215 @@
+{
+  "vision_r": 8,
+  "att_bandwidth": 8,
+  "retention": 8,
+  "curr_time": "February 13, 2023, 07:46:00",
+  "curr_tile": [
+    56,
+    14
+  ],
+  "daily_plan_req": "Arthur Burton opens The Rose and Crown Pub at 5pm everyday, and stands at the counter until 10pm, at which point he closes the bar.",
+  "name": "Arthur Burton",
+  "first_name": "Arthur",
+  "last_name": "Burton",
+  "age": 42,
+  "innate": "friendly, outgoing, generous",
+  "learned": "Arthur Burton is a bartender and bar owner of The Rose and Crown Pub who loves to make people feel welcome. He is always looking for ways to make his customers feel special.",
+  "currently": "Arthur Burton is running a beloved bar in the town that's been around for 10 years. He is also learning more about mixology and create unique cocktails.",
+  "lifestyle": "Arthur Burton goes to bed around midnight, awakes up around 7am, eats dinner around 4pm.",
+  "living_area": "the Ville:Arthur Burton's apartment:main room",
+  "concept_forget": 100,
+  "daily_reflection_time": 180,
+  "daily_reflection_size": 5,
+  "overlap_reflect_th": 4,
+  "kw_strg_event_reflect_th": 10,
+  "kw_strg_thought_reflect_th": 9,
+  "recency_w": 1,
+  "relevance_w": 1,
+  "importance_w": 1,
+  "recency_decay": 0.995,
+  "importance_trigger_max": 250,
+  "importance_trigger_curr": 194,
+  "importance_ele_n": 38,
+  "thought_count": 5,
+  "daily_req": [
+    "wake up and complete the morning routine at 7:00 am",
+    "Eat breakfast at 8:00 am",
+    "Spend some time working on the bar's inventory and menu at 9:00 am",
+    "Take a break and go for a walk outside at 11:00 am",
+    "Prepare for the bar's opening at 12:00 pm",
+    "Open The Rose and Crown Pub at 5:00 pm and stand at the counter until 10:00 pm",
+    "Close the bar and clean up at 11:00 pm",
+    "Have dinner at 12:00 am"
+  ],
+  "f_daily_schedule": [
+    [
+      "sleeping",
+      420
+    ],
+    [
+      "awake (is getting out of bed)",
+      10
+    ],
+    [
+      "awake (is brushing his teeth)",
+      10
+    ],
+    [
+      "awake (is taking a shower)",
+      10
+    ],
+    [
+      "awake (is drying himself)",
+      10
+    ],
+    [
+      "awake (is getting dressed)",
+      10
+    ],
+    [
+      "awake (is eating breakfast)",
+      10
+    ],
+    [
+      "eating breakfast (is preparing breakfast)",
+      10
+    ],
+    [
+      "eating breakfast (is cooking eggs)",
+      10
+    ],
+    [
+      "eating breakfast (is frying bacon)",
+      10
+    ],
+    [
+      "eating breakfast (is making toast)",
+      10
+    ],
+    [
+      "eating breakfast (is buttering the toast)",
+      10
+    ],
+    [
+      "eating breakfast (is spreading jam on the toast)",
+      10
+    ],
+    [
+      "working on the bar's inventory and menu",
+      60
+    ],
+    [
+      "preparing for the bar's opening at 12:00 pm",
+      60
+    ],
+    [
+      "taking a break and going for a walk outside",
+      60
+    ],
+    [
+      "preparing for the bar's opening at 5:00 pm",
+      180
+    ],
+    [
+      "working on the bar's inventory and menu",
+      60
+    ],
+    [
+      "preparing for the bar's opening at 5:00 pm",
+      360
+    ],
+    [
+      "closing the bar and cleaning up",
+      120
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ],
+    [
+      "sleeping",
+      0
+    ]
+  ],
+  "f_daily_schedule_hourly_org": [
+    [
+      "sleeping",
+      420
+    ],
+    [
+      "awake",
+      60
+    ],
+    [
+      "eating breakfast",
+      60
+    ],
+    [
+      "working on the bar's inventory and menu",
+      60
+    ],
+    [
+      "preparing for the bar's opening at 12:00 pm",
+      60
+    ],
+    [
+      "taking a break and going for a walk outside",
+      60
+    ],
+    [
+      "preparing for the bar's opening at 5:00 pm",
+      180
+    ],
+    [
+      "working on the bar's inventory and menu",
+      60
+    ],
+    [
+      "preparing for the bar's opening at 5:00 pm",
+      360
+    ],
+    [
+      "closing the bar and cleaning up",
+      120
+    ]
+  ],
+  "act_address": "the Ville:Arthur Burton's apartment:main room:closet",
+  "act_start_time": "February 13, 2023, 07:40:00",
+  "act_duration": 10,
+  "act_description": "awake (is getting dressed)",
+  "act_pronunciatio": "\u043e\u0434\u0435",
+  "act_event": [
+    "Arthur Burton",
+    "get dressed",
+    ""
+  ],
+  "act_obj_description": "being used by Arthur Burton",
+  "act_obj_pronunciatio": "\ud83d\udc68\u200d\ud83d\udcbc",
+  "act_obj_event": [
+    "closet",
+    "be used by",
+    "Arthur Burton"
+  ],
+  "chatting_with": null,
+  "chat": null,
+  "chatting_with_buffer": {},
+  "chatting_end_time": null,
+  "act_path_set": true,
+  "planned_path": []
+}

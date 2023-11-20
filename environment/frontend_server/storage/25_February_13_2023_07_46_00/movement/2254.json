@@ -1,0 +1,242 @@
+{
+  "persona": {
+    "Latoya Williams": {
+      "movement": [
+        21,
+        21
+      ],
+      "pronunciatio": "\ud83e\uddfc\ud83e\uddfd",
+      "description": "waking up and completing her morning routine (is washing her face) @ the Ville:artist's co-living space:Latoya Williams's bathroom:bathroom sink",
+      "chat": null
+    },
+    "Rajiv Patel": {
+      "movement": [
+        25,
+        18
+      ],
+      "pronunciatio": "\ud83d\ude34\u5e8a\u57ab",
+      "description": "sleeping @ the Ville:artist's co-living space:Rajiv Patel's room:bed",
+      "chat": null
+    },
+    "Abigail Chen": {
+      "movement": [
+        36,
+        18
+      ],
+      "pronunciatio": "\ud83d\ude34\u5e8a\u57ab",
+      "description": "sleeping @ the Ville:artist's co-living space:Abigail Chen's room:bed",
+      "chat": null
+    },
+    "Francisco Lopez": {
+      "movement": [
+        16,
+        32
+      ],
+      "pronunciatio": "\ud83d\udecc\ud83d\udca4",
+      "description": "sleeping @ the Ville:artist's co-living space:Francisco Lopez's room:bed",
+      "chat": null
+    },
+    "Hailey Johnson": {
+      "movement": [
+        36,
+        28
+      ],
+      "pronunciatio": "\ud83d\udcc5\ud83d\udc86\u200d",
+      "description": "awake (is reviewing her calendar and to-do list for the day) @ the Ville:artist's co-living space:common room:common room table",
+      "chat": null
+    },
+    "Arthur Burton": {
+      "movement": [
+        54,
+        14
+      ],
+      "pronunciatio": "\ud83d\udecc\ud83d\ude34",
+      "description": "sleeping @ the Ville:Arthur Burton's apartment:main room:bed",
+      "chat": null
+    },
+    "Ryan Park": {
+      "movement": [
+        66,
+        19
+      ],
+      "pronunciatio": "\ud83d\ude34\u5e8a\u57ab",
+      "description": "sleeping @ the Ville:Ryan Park's apartment:main room:bed",
+      "chat": null
+    },
+    "Isabella Rodriguez": {
+      "movement": [
+        73,
+        14
+      ],
+      "pronunciatio": "\u62bb\ufe0f\ud83d\udc86",
+      "description": "awakening at 6:00 AM (is stretching her body) @ the Ville:Isabella Rodriguez's apartment:main room:bed",
+      "chat": null
+    },
+    "Giorgio Rossi": {
+      "movement": [
+        87,
+        18
+      ],
+      "pronunciatio": "\ud83d\udecc\ud83d\udca4",
+      "description": "sleeping @ the Ville:Giorgio Rossi's apartment:main room:bed",
+      "chat": null
+    },
+    "Carlos Gomez": {
+      "movement": [
+        93,
+        18
+      ],
+      "pronunciatio": "\ud83d\ude34\ud83d\udca4",
+      "description": "sleeping @ the Ville:Carlos Gomez's apartment:main room:bed",
+      "chat": null
+    },
+    "Klaus Mueller": {
+      "movement": [
+        127,
+        46
+      ],
+      "pronunciatio": "\ud83d\ude34\u5e8a\u57ab",
+      "description": "sleeping @ the Ville:Dorm for Oak Hill College:Klaus Mueller's room:bed",
+      "chat": null
+    },
+    "Maria Lopez": {
+      "movement": [
+        132,
+        57
+      ],
+      "pronunciatio": "\ud83d\udcac",
+      "description": "conversing about conversing about how Maria Lopez and Ayesha are doing today @ <persona> Ayesha Khan",
+      "chat": [
+        [
+          "Maria Lopez",
+          "Good morning Ayesha! How are you doing today?"
+        ]
+      ]
+    },
+    "Ayesha Khan": {
+      "movement": [
+        131,
+        52
+      ],
+      "pronunciatio": "\ud83d\udcac",
+      "description": "conversing about conversing about how Maria Lopez and Ayesha are doing today @ <persona> Maria Lopez",
+      "chat": [
+        [
+          "Maria Lopez",
+          "Good morning Ayesha! How are you doing today?"
+        ]
+      ]
+    },
+    "Wolfgang Schulz": {
+      "movement": [
+        115,
+        51
+      ],
+      "pronunciatio": "\ud83d\udcaa\ud83c\udffc_",
+      "description": "going for a run at the park (is stretching his muscles) @ the Ville:Johnson Park:park:park garden",
+      "chat": null
+    },
+    "Mei Lin": {
+      "movement": [
+        90,
+        74
+      ],
+      "pronunciatio": "\ud83d\ude34\u5e8a\u57ab",
+      "description": "sleeping @ the Ville:Lin family's house:Mei and John Lin's bedroom:bed",
+      "chat": null
+    },
+    "John Lin": {
+      "movement": [
+        98,
+        65
+      ],
+      "pronunciatio": "\ud83e\uddb7 \u0437",
+      "description": "awake (brushing his teeth) @ the Ville:Lin family's house:bathroom:bathroom sink",
+      "chat": null
+    },
+    "Eddy Lin": {
+      "movement": [
+        90,
+        74
+      ],
+      "pronunciatio": "\ud83d\ude34\u5e8a\u57ab",
+      "description": "sleeping @ the Ville:Lin family's house:Mei and John Lin's bedroom:bed",
+      "chat": null
+    },
+    "Tom Moreno": {
+      "movement": [
+        73,
+        74
+      ],
+      "pronunciatio": "\ud83d\ude34\u5e8a\u57ab",
+      "description": "sleeping @ the Ville:Moreno family's house:Tom and Jane Moreno's bedroom:bed",
+      "chat": null
+    },
+    "Jane Moreno": {
+      "movement": [
+        72,
+        79
+      ],
+      "pronunciatio": "\ud83d\udcaa\ud83d\udc83",
+      "description": "awakening at 6:00 am (stretching her body) @ the Ville:Moreno family's house:garden:garden chair",
+      "chat": null
+    },
+    "Tamara Taylor": {
+      "movement": [
+        62,
+        65
+      ],
+      "pronunciatio": "\ud83e\uddb7\ud83e\uddb7",
+      "description": "waking up and completing her morning routine (is brushing her teeth) @ the Ville:Tamara Taylor and Carmen Ortiz's house:bathroom:bathroom sink",
+      "chat": null
+    },
+    "Carmen Ortiz": {
+      "movement": [
+        58,
+        74
+      ],
+      "pronunciatio": "\ud83d\ude34\ud83d\udca4",
+      "description": "sleeping @ the Ville:Tamara Taylor and Carmen Ortiz's house:Carmen Ortiz's room:bed",
+      "chat": null
+    },
+    "Sam Moore": {
+      "movement": [
+        27,
+        47
+      ],
+      "pronunciatio": "\ud83c\udf33\ud83c\udf43",
+      "description": "taking a walk around Johnson Park (is taking a deep breath and feeling grateful for the beauty of nature around him) @ the Ville:Johnson Park:park:park garden",
+      "chat": null
+    },
+    "Jennifer Moore": {
+      "movement": [
+        39,
+        62
+      ],
+      "pronunciatio": "\ud83c\udf7d\ufe0f\ud83e\uddf9",
+      "description": "having breakfast (cleaning up the kitchen after breakfast) @ the Ville:Moore family's house:main room:kitchen sink",
+      "chat": null
+    },
+    "Yuriko Yamamoto": {
+      "movement": [
+        29,
+        65
+      ],
+      "pronunciatio": "\ud83d\ude34\ud83d\udca4",
+      "description": "sleeping @ the Ville:Yuriko Yamamoto's house:main room:bed",
+      "chat": null
+    },
+    "Adam Smith": {
+      "movement": [
+        24,
+        49
+      ],
+      "pronunciatio": "\ud83c\udfcb\ufe0f\u200d",
+      "description": "awake (is exercising for 30 minutes) @ the Ville:Johnson Park:park:park garden",
+      "chat": null
+    }
+  },
+  "meta": {
+    "curr_time": "February 13, 2023, 06:15:40"
+  }
+}
