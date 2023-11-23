@@ -43,6 +43,9 @@ def get_all_generate_data(simulation="base_the_ville_isabella_maria_klaus"):
 
 if __name__ == "__main__":
     data = get_all_generate_data("25_February_13_2023_07_46_00")
+    for i in data:
+        if i['conversation']:
+            print(i['conversation'])
     print(data[0].keys())
     print(data[2]['thought'])
     print(data[2]['name'])
