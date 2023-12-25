@@ -405,9 +405,13 @@ def generate_new_decomp_schedule(persona, inserted_act, inserted_act_dur,  start
 # CHAPTER 3: Plan
 ##############################################################################
 
+class ChatGPT_single_request:
+  pass
+
+
 def revise_identity(persona): 
   p_name = persona.scratch.name
-
+  
   focal_points = [f"{p_name}'s plan for {persona.scratch.get_str_curr_date_str()}.",
                   f"Important recent events for {p_name}'s life."]
   retrieved = new_retrieve(persona, focal_points)
@@ -423,13 +427,13 @@ def revise_identity(persona):
   plan_prompt += f" *{persona.scratch.curr_time.strftime('%A %B %d')}*? "
   plan_prompt += f"If there is any scheduling information, be as specific as possible (include date, time, and location if stated in the statement)\n\n"
   plan_prompt += f"Write the response from {p_name}'s perspective."
-  plan_note = ChatGPT_single_request(plan_prompt)
+  plan_note = Qwen_request(plan_prompt)
   # print (plan_note)
 
   thought_prompt = statements + "\n"
   thought_prompt += f"Given the statements above, how might we summarize {p_name}'s feelings about their days up to now?\n\n"
   thought_prompt += f"Write the response from {p_name}'s perspective."
-  thought_note = ChatGPT_single_request(thought_prompt)
+  thought_note = Qwen_request(thought_prompt)
   # print (thought_note)
 
   currently_prompt = f"{p_name}'s status from {(persona.scratch.curr_time - datetime.timedelta(days=1)).strftime('%A %B %d')}:\n"
@@ -441,7 +445,7 @@ def revise_identity(persona):
   currently_prompt += "Follow this format below:\nStatus: <new status>"
   # print ("DEBUG ;adjhfno;asdjao;asdfsidfjo;af", p_name)
   # print (currently_prompt)
-  new_currently = ChatGPT_single_request(currently_prompt)
+  new_currently = Qwen_request(currently_prompt)
   # print (new_currently)
   # print (new_currently[10:])
 
@@ -565,7 +569,7 @@ def _determine_action(persona, maze):
   if curr_index == 0:
     # This portion is invoked if it is the first hour of the day. 
     act_desp, act_dura = persona.scratch.f_daily_schedule[curr_index]
-    if act_dura >= 60: 
+    if act_dura >= 60:
       # We decompose if the next action is longer than an hour, and fits the
       # criteria described in determine_decomp.
       if determine_decomp(act_desp, act_dura): 
@@ -621,6 +625,7 @@ def _determine_action(persona, maze):
 
   # Finding the target location of the action and creating action-related
   # variables.
+  # todo 拿个实例
   act_world = maze.access_tile(persona.scratch.curr_tile)["world"]
   # act_sector = maze.access_tile(persona.scratch.curr_tile)["sector"]
   act_sector = generate_action_sector(act_desp, persona, maze)
@@ -791,6 +796,7 @@ def _should_react(persona, retrieved, personas):
   # dictionary {["curr_event"] = <ConceptNode>, 
   #             ["events"] = [<ConceptNode>, ...], 
   #             ["thoughts"] = [<ConceptNode>, ...]}
+  # todo 当前事件是什么 快照
   curr_event = retrieved["curr_event"]
 
   if ":" not in curr_event.subject: 
@@ -994,7 +1000,7 @@ def plan(persona, maze, personas, new_day, retrieved):
   if persona.scratch.act_event[1] != "chat with":
     persona.scratch.chatting_with = None
     persona.scratch.chat = None
-    persona.scratch.chatting_end_time = None
+    persona.scratc.chatting_end_time = None
   # We want to make sure that the persona does not keep conversing with each
   # other in an infinite loop. So, chatting_with_buffer maintains a form of 
   # buffer that makes the persona wait from talking to the same target 

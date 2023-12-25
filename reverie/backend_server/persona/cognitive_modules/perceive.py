@@ -135,7 +135,7 @@ def perceive(persona, maze):
       # Get event embedding
       desc_embedding_in = desc
       if "(" in desc: 
-        desc_embedding_in = (desc_embedding_in.split("(")[1]
+        desc_embedding_in = (s+' '+desc_embedding_in.split("(")[1]
                                               .split(")")[0]
                                               .strip())
       if desc_embedding_in in persona.a_mem.embeddings: 

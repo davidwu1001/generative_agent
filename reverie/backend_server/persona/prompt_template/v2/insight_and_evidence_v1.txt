@@ -10,6 +10,7 @@ Input:
 
 Task: What !<INPUT 1>! high-level insights can you infer from the above statements? (example format: insight (because of 1, 5, 3))
 
+Important: must include "because of"!!!
 
 example output format:
 1. Jennifer Moore is preparing for an exhibition (because of 3, 5, 10).

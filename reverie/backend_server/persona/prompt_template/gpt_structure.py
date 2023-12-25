@@ -12,15 +12,20 @@ import openai
 import time 
 import os
 from text2vec import SentenceModel
+from transformers import pipeline
 
 from utils import *
 openai.api_key = openai_api_key
 
-
+all_prompt_file_path = '/data/wcc/generative_agent/reverie/backend_server/all_prompt.txt'
+wrong_prompt_file_path = '/data/wcc/generative_agent/reverie/backend_server/wrong_prompt.txt'
+def save_to_txt(prompt, wrong_prompt_file_path=wrong_prompt_file_path):
+  with open(wrong_prompt_file_path, 'a+') as f:
+    f.write(prompt+"\n----------------------------------------------------------[PROMPT]----------------------------------------------------------\n")
 def Qwen_request(prompt, Qwen_parameter={}):
   os.environ["HTTP_PROXY"] = ""
   os.environ["HTTPS_PROXY"] = ""
-  openai.api_base = "http://10.112.189.233:8001/v1"
+  openai.api_base = "http://10.161.39.11:8001/v1"
   openai.api_key = "none"
   response = openai.ChatCompletion.create(
     model="Qwen",
@@ -185,9 +190,9 @@ def ChatGPT_safe_generate_response(prompt,
     except:
       pass
 
-    else:
-      pass
-  return False
+  print("---------------------此处触发安全机制，log已写入wrong_prompt.txt")
+  save_to_txt(prompt=prompt)
+  return fail_safe_response
 
 
 def ChatGPT_safe_generate_response_OLD(prompt,
@@ -212,7 +217,8 @@ def ChatGPT_safe_generate_response_OLD(prompt,
 
     except:
       pass
-  print ("FAIL SAFE TRIGGERED")
+  print("---------------------此处触发安全机制，log已写入wrong_prompt.txt")
+  save_to_txt(prompt=prompt)
   return fail_safe_response
 
 
@@ -297,7 +303,8 @@ def safe_generate_response(prompt,
       print ("---- repeat count: ", i, curr_gpt_response)
       print (curr_gpt_response)
       print ("~~~~")
-  print("---------------------此处触发安全机制")
+  print("---------------------此处触发安全机制，log已写入wrong_prompt.txt")
+  save_to_txt(prompt=prompt)
   return fail_safe_response
 
 def safe_generate_response_gpt(prompt,
@@ -319,6 +326,8 @@ def safe_generate_response_gpt(prompt,
       print ("---- repeat count: ", i, curr_gpt_response)
       print (curr_gpt_response)
       print ("~~~~")
+  print("---------------------此处触发安全机制，log已写入wrong_prompt.txt")
+  save_to_txt(prompt=prompt)
   return fail_safe_response
 
 # def get_embedding(text, model="text-embedding-ada-002"):
@@ -331,19 +340,29 @@ def safe_generate_response_gpt(prompt,
 #           input=[text], model=model)['data'][0]['embedding']
 #   return vector
 
+# def get_embedding(text, model="shibing624/text2vec-base-multilingual"):
+#   # os.environ["HTTP_PROXY"] = "http://127.0.0.1:7895"
+#   # os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7895"
+#   text = text.replace("\n", " ")
+#   if not text:
+#     text = "this is blank"
+#   print("待嵌入文本："+text)
+#   # todo wcc 为了跑下去 只能扩充至1536维和之前的数据维度保持一致
+#   m = SentenceModel(model_name_or_path=model)
+#   vector = m.encode(text)
+#   expanded_vector = np.zeros(1536)
+#   expanded_vector[:len(vector)] = vector
+#   return list(expanded_vector)
 def get_embedding(text, model="shibing624/text2vec-base-multilingual"):
-  os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
-  os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7890"
+  # os.environ["HTTP_PROXY"] = "http://127.0.0.1:7895"
+  # os.environ["HTTPS_PROXY"] = "http://127.0.0.1:7895"
   text = text.replace("\n", " ")
   if not text:
     text = "this is blank"
   print("待嵌入文本："+text)
-  # todo wcc 为了跑下去 只能扩充至1536维和之前的数据维度保持一致
-  m = SentenceModel(model_name_or_path=model)
-  vector = m.encode(text)
-  expanded_vector = np.zeros(1536)
-  expanded_vector[:len(vector)] = vector
-  return list(expanded_vector)
+  pipe = pipeline("feature-extraction", model="princeton-nlp/sup-simcse-roberta-large")
+  return list(np.mean(np.array(pipe(text)[0]), axis=0))  # 1024维
+
 
 
 if __name__ == '__main__':
